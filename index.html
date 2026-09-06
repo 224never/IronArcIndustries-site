@@ -309,1497 +309,544 @@
      UK → ESTONIA → SOUTHERN SPAIN
      ========================================================= -->
 
-<section id="european-validation" class="iai-europe">
+<!-- =========================================================
+     IRONARC INDUSTRIES
+     COMPACT EUROPE + VALIDATION + PARTNER BLOCK
+     P&P MEETING VERSION
+     ========================================================= -->
 
-  <style>
-    /* =========================================================
-       IRONARC EUROPEAN VALIDATION
-       Scoped styles — designed not to affect the rest of site
-       ========================================================= */
+<style>
+  .iai-compact{
+    --iai-bg:#090a0b;
+    --iai-panel:#0d0f11;
+    --iai-line:rgba(255,255,255,.13);
+    --iai-line-strong:rgba(255,255,255,.24);
+    --iai-text:#f2f3f4;
+    --iai-muted:#8e959a;
+    --iai-cold:#b9cbd4;
+    --iai-warm:#c9b18d;
 
-    .iai-europe {
-      --iai-black: #070809;
-      --iai-panel: #0d0f11;
-      --iai-panel-2: #121518;
-      --iai-line: rgba(255,255,255,0.13);
-      --iai-line-strong: rgba(255,255,255,0.26);
-      --iai-white: #f3f5f6;
-      --iai-grey: #979da2;
-      --iai-grey-soft: #686e73;
+    background:var(--iai-bg);
+    color:var(--iai-text);
+    border-top:1px solid var(--iai-line);
+    border-bottom:1px solid var(--iai-line);
+  }
 
-      /* Estonia */
-      --iai-cold-1: #11171b;
-      --iai-cold-2: #192228;
-      --iai-cold-text: #dce5e9;
+  .iai-compact *{
+    box-sizing:border-box;
+  }
 
-      /* Spain */
-      --iai-warm-1: #1a1713;
-      --iai-warm-2: #272118;
-      --iai-warm-text: #e8dfd3;
+  .iai-compact .wrap{
+    width:min(1180px,calc(100% - 40px));
+    margin:0 auto;
+  }
 
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      background: var(--iai-black);
-      color: var(--iai-white);
-      font-family:
-        Inter,
-        "Helvetica Neue",
-        Helvetica,
-        Arial,
-        sans-serif;
-      border-top: 1px solid var(--iai-line);
-      border-bottom: 1px solid var(--iai-line);
-    }
+  .iai-compact .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:34px;
+    padding:72px 0 30px;
+  }
 
-    .iai-europe *,
-    .iai-europe *::before,
-    .iai-europe *::after {
-      box-sizing: border-box;
-    }
+  .iai-compact .section-head h2{
+    margin:0;
+    font-family:"Arial Black",Impact,sans-serif;
+    font-size:clamp(32px,5vw,58px);
+    line-height:.95;
+    text-transform:uppercase;
+  }
 
-    .iai-shell {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
-    }
+  .iai-compact .section-head p{
+    max-width:560px;
+    margin:0;
+    color:var(--iai-muted);
+    font-size:14px;
+    line-height:1.6;
+  }
 
-    .iai-kicker {
-      margin: 0 0 14px;
-      color: var(--iai-grey);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-    }
+  .iai-europe-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-top:1px solid var(--iai-line);
+    border-left:1px solid var(--iai-line);
+  }
 
-    .iai-title {
-      margin: 0;
-      max-width: 950px;
-      color: var(--iai-white);
-      font-size: clamp(34px, 5.2vw, 72px);
-      line-height: 0.98;
-      letter-spacing: -0.035em;
-      font-weight: 780;
-      text-transform: uppercase;
-    }
+  .iai-europe-card{
+    position:relative;
+    min-height:320px;
+    padding:30px;
+    overflow:hidden;
+    border-right:1px solid var(--iai-line);
+    border-bottom:1px solid var(--iai-line);
+  }
 
-    .iai-title-small {
-      font-size: clamp(30px, 4vw, 58px);
-    }
+  .iai-europe-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    opacity:.16;
+  }
 
-    .iai-lead {
-      max-width: 780px;
-      margin: 28px 0 0;
-      color: #b7bcc0;
-      font-size: clamp(16px, 1.8vw, 20px);
-      line-height: 1.65;
-    }
-
-    .iai-rule {
-      width: 100%;
-      height: 1px;
-      margin: 38px 0;
-      background: linear-gradient(
-        90deg,
-        rgba(255,255,255,.45),
-        rgba(255,255,255,.08),
-        transparent
+  .iai-europe-card.estonia{
+    background:
+      linear-gradient(
+        135deg,
+        #080b0d 0%,
+        #10171b 55%,
+        #172027 100%
       );
-    }
+  }
 
-    .iai-statusline {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 28px;
-      padding-top: 22px;
-      color: var(--iai-grey);
-      border-top: 1px solid var(--iai-line);
-      font-size: 10px;
-      line-height: 1.5;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
-
-    .iai-statusline strong {
-      color: var(--iai-white);
-      font-weight: 700;
-    }
-
-    /* ---------------------------------------------------------
-       INTRO
-       --------------------------------------------------------- */
-
-    .iai-intro {
-      position: relative;
-      padding: 110px 0 100px;
-      background:
-        linear-gradient(180deg, #070809 0%, #0a0c0e 100%);
-    }
-
-    .iai-route {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin-top: 70px;
-      border-top: 1px solid var(--iai-line);
-      border-bottom: 1px solid var(--iai-line);
-    }
-
-    .iai-route-item {
-      position: relative;
-      min-height: 150px;
-      padding: 26px 26px 28px;
-      border-right: 1px solid var(--iai-line);
-    }
-
-    .iai-route-item:last-child {
-      border-right: none;
-    }
-
-    .iai-route-index {
-      display: block;
-      margin-bottom: 35px;
-      color: var(--iai-grey-soft);
-      font-size: 10px;
-      letter-spacing: .18em;
-    }
-
-    .iai-route-location {
-      display: block;
-      color: var(--iai-white);
-      font-size: 18px;
-      font-weight: 750;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-
-    .iai-route-function {
-      display: block;
-      margin-top: 7px;
-      color: var(--iai-grey);
-      font-size: 11px;
-      line-height: 1.5;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    /* ---------------------------------------------------------
-       LOCATION SECTIONS
-       --------------------------------------------------------- */
-
-    .iai-location {
-      position: relative;
-      min-height: 680px;
-      padding: 125px 0;
-      border-top: 1px solid var(--iai-line);
-      transition:
-        background-color .8s ease,
-        color .8s ease;
-    }
-
-    .iai-location-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(290px, .9fr);
-      gap: 80px;
-      align-items: center;
-    }
-
-    .iai-location-number {
-      margin-bottom: 20px;
-      color: rgba(255,255,255,.30);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .22em;
-    }
-
-    .iai-location h3 {
-      margin: 0;
-      font-size: clamp(46px, 7vw, 94px);
-      line-height: .9;
-      letter-spacing: -.05em;
-      text-transform: uppercase;
-    }
-
-    .iai-location-sub {
-      margin: 18px 0 0;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .20em;
-      text-transform: uppercase;
-    }
-
-    .iai-location-copy {
-      max-width: 680px;
-      margin-top: 40px;
-      font-size: 17px;
-      line-height: 1.75;
-    }
-
-    .iai-conditions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 38px;
-    }
-
-    .iai-condition {
-      padding: 9px 11px;
-      border: 1px solid var(--iai-line-strong);
-      background: rgba(0,0,0,.10);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    /* ---------------------------------------------------------
-       ENGINEERING SIDE PANEL
-       --------------------------------------------------------- */
-
-    .iai-environment-panel {
-      position: relative;
-      padding: 30px;
-      border: 1px solid var(--iai-line-strong);
-      background: rgba(5,6,7,.34);
-      backdrop-filter: blur(8px);
-    }
-
-    .iai-panel-label {
-      margin-bottom: 38px;
-      color: var(--iai-grey);
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-    }
-
-    .iai-readout {
-      padding: 16px 0;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-readout:last-child {
-      border-bottom: 1px solid var(--iai-line);
-    }
-
-    .iai-readout-key {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--iai-grey);
-      font-size: 9px;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    .iai-readout-value {
-      display: block;
-      color: var(--iai-white);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-    }
-
-    .iai-datum {
-      position: absolute;
-      top: 30px;
-      right: 24px;
-      bottom: 30px;
-      width: 1px;
-      background: linear-gradient(
+  .iai-europe-card.estonia::after{
+    background:
+      linear-gradient(
         180deg,
-        transparent,
-        rgba(255,255,255,.34) 18%,
-        rgba(255,255,255,.34) 82%,
-        transparent
+        rgba(0,112,255,.25) 0 33%,
+        rgba(0,0,0,.12) 33% 66%,
+        rgba(255,255,255,.18) 66% 100%
       );
+    mix-blend-mode:soft-light;
+  }
+
+  .iai-europe-card.spain{
+    background:
+      linear-gradient(
+        135deg,
+        #0b0a08 0%,
+        #17130f 55%,
+        #221b12 100%
+      );
+  }
+
+  .iai-europe-card.spain::after{
+    background:
+      linear-gradient(
+        180deg,
+        rgba(170,0,0,.24) 0 25%,
+        rgba(230,190,0,.18) 25% 75%,
+        rgba(170,0,0,.24) 75% 100%
+      );
+    mix-blend-mode:soft-light;
+  }
+
+  .iai-europe-card > *{
+    position:relative;
+    z-index:1;
+  }
+
+  .iai-eyebrow{
+    margin-bottom:46px;
+    color:var(--iai-muted);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+  }
+
+  .iai-europe-card h3{
+    margin:0 0 8px;
+    font-family:"Arial Black",Impact,sans-serif;
+    font-size:clamp(30px,4vw,48px);
+    line-height:1;
+    text-transform:uppercase;
+  }
+
+  .iai-role{
+    margin-bottom:22px;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+  }
+
+  .estonia .iai-role{
+    color:var(--iai-cold);
+  }
+
+  .spain .iai-role{
+    color:var(--iai-warm);
+  }
+
+  .iai-europe-card p{
+    max-width:490px;
+    margin:0;
+    color:var(--iai-muted);
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .iai-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-top:26px;
+  }
+
+  .iai-tags span{
+    padding:7px 9px;
+    border:1px solid var(--iai-line-strong);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+  }
+
+  .iai-baseline{
+    padding:16px 0;
+    border-bottom:1px solid var(--iai-line);
+    color:var(--iai-muted);
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.15em;
+    text-align:center;
+    text-transform:uppercase;
+  }
+
+  .iai-baseline strong{
+    color:var(--iai-text);
+  }
+
+  .iai-validation-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--iai-line);
+    border-left:1px solid var(--iai-line);
+  }
+
+  .iai-validation-card{
+    min-height:210px;
+    padding:26px;
+    border-right:1px solid var(--iai-line);
+    border-bottom:1px solid var(--iai-line);
+  }
+
+  .iai-validation-index{
+    margin-bottom:38px;
+    color:var(--iai-muted);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.16em;
+  }
+
+  .iai-validation-card h3{
+    margin:0 0 12px;
+    font-family:"Arial Black",Impact,sans-serif;
+    font-size:19px;
+    line-height:1.15;
+    text-transform:uppercase;
+  }
+
+  .iai-validation-card p{
+    margin:0;
+    color:var(--iai-muted);
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  .iai-state{
+    display:inline-block;
+    margin-top:20px;
+    padding:6px 8px;
+    border:1px solid var(--iai-line);
+    color:var(--iai-muted);
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+  }
+
+  .iai-partner{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:46px;
+    align-items:end;
+    padding:64px 0 72px;
+  }
+
+  .iai-partner h2{
+    margin:0;
+    font-family:"Arial Black",Impact,sans-serif;
+    font-size:clamp(30px,4.5vw,52px);
+    line-height:1;
+    text-transform:uppercase;
+  }
+
+  .iai-partner p{
+    max-width:670px;
+    margin:22px 0 0;
+    color:var(--iai-muted);
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .iai-partner-actions{
+    display:flex;
+    justify-content:flex-end;
+  }
+
+  .iai-partner-btn{
+    display:inline-flex;
+    min-height:46px;
+    align-items:center;
+    justify-content:center;
+    padding:0 20px;
+    border:1px solid rgba(255,255,255,.3);
+    color:var(--iai-text);
+    text-decoration:none;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+
+  .iai-partner-btn:hover{
+    background:#f2f3f4;
+    color:#090a0b;
+  }
+
+  @media(max-width:800px){
+    .iai-compact .wrap{
+      width:calc(100% - 24px);
     }
 
-    .iai-datum::before,
-    .iai-datum::after {
-      content: "";
-      position: absolute;
-      left: -3px;
-      width: 7px;
-      height: 7px;
-      border: 1px solid rgba(255,255,255,.45);
-      background: transparent;
+    .iai-compact .section-head{
+      display:block;
+      padding-top:54px;
     }
 
-    .iai-datum::before { top: 18%; }
-    .iai-datum::after { bottom: 18%; }
-
-    /* ---------------------------------------------------------
-       UK
-       --------------------------------------------------------- */
-
-    .iai-uk {
-      background:
-        radial-gradient(
-          circle at 80% 40%,
-          rgba(255,255,255,.035),
-          transparent 40%
-        ),
-        #0a0c0d;
+    .iai-compact .section-head p{
+      margin-top:16px;
     }
 
-    /* ---------------------------------------------------------
-       ESTONIA — COLD
-       --------------------------------------------------------- */
-
-    .iai-estonia {
-      color: var(--iai-cold-text);
-      background:
-        linear-gradient(
-          115deg,
-          rgba(255,255,255,.018) 0 1px,
-          transparent 1px 82px
-        ),
-        linear-gradient(
-          180deg,
-          #0b0f12 0%,
-          var(--iai-cold-1) 44%,
-          var(--iai-cold-2) 100%
-        );
-      background-size:
-        82px 82px,
-        auto;
+    .iai-europe-grid,
+    .iai-validation-grid,
+    .iai-partner{
+      grid-template-columns:1fr;
     }
 
-    .iai-estonia::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      opacity: .35;
-      background:
-        radial-gradient(
-          ellipse at 72% 30%,
-          rgba(201,219,227,.12),
-          transparent 37%
-        ),
-        linear-gradient(
-          180deg,
-          transparent 45%,
-          rgba(207,225,234,.035)
-        );
+    .iai-partner-actions{
+      justify-content:flex-start;
     }
 
-    .iai-estonia .iai-location-sub {
-      color: #b9c9d1;
+    .iai-europe-card{
+      min-height:280px;
     }
+  }
+</style>
 
-    /* ---------------------------------------------------------
-       VALIDATION ENVELOPE
-       --------------------------------------------------------- */
 
-    .iai-envelope {
-      padding: 100px 0;
-      background:
-        linear-gradient(
-          180deg,
-          var(--iai-cold-2) 0%,
-          #111315 48%,
-          var(--iai-warm-2) 100%
-        );
-      border-top: 1px solid var(--iai-line);
-      border-bottom: 1px solid var(--iai-line);
-    }
+<section id="europe" class="iai-compact">
 
-    .iai-envelope-head {
-      margin-bottom: 60px;
-      text-align: center;
-    }
+  <div class="wrap">
 
-    .iai-envelope-flow {
-      max-width: 790px;
-      margin: 0 auto;
-    }
-
-    .iai-env-node {
-      display: grid;
-      grid-template-columns: 155px 1fr;
-      gap: 25px;
-      align-items: center;
-      padding: 21px 0;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-env-node:last-child {
-      border-bottom: 1px solid var(--iai-line);
-    }
-
-    .iai-env-key {
-      color: var(--iai-grey);
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: .17em;
-      text-transform: uppercase;
-    }
-
-    .iai-env-value {
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    .iai-baseline-node {
-      margin: 18px 0;
-      padding: 26px;
-      border: 1px solid rgba(255,255,255,.36);
-      background: rgba(0,0,0,.22);
-      text-align: center;
-    }
-
-    .iai-baseline-node span {
-      display: block;
-    }
-
-    .iai-baseline-name {
-      color: var(--iai-white);
-      font-size: 20px;
-      font-weight: 780;
-      letter-spacing: .07em;
-    }
-
-    .iai-baseline-status {
-      margin-top: 8px;
-      color: var(--iai-grey);
-      font-size: 9px;
-      letter-spacing: .19em;
-    }
-
-    /* ---------------------------------------------------------
-       SPAIN — WARM
-       --------------------------------------------------------- */
-
-    .iai-spain {
-      color: var(--iai-warm-text);
-      background:
-        linear-gradient(
-          115deg,
-          rgba(255,255,255,.015) 0 1px,
-          transparent 1px 82px
-        ),
-        linear-gradient(
-          180deg,
-          var(--iai-warm-2) 0%,
-          var(--iai-warm-1) 65%,
-          #0d0c0a 100%
-        );
-      background-size:
-        82px 82px,
-        auto;
-    }
-
-    .iai-spain::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background:
-        radial-gradient(
-          ellipse at 78% 28%,
-          rgba(230,193,132,.105),
-          transparent 36%
-        );
-    }
-
-    .iai-spain .iai-location-sub {
-      color: #cdbca4;
-    }
-
-    /* ---------------------------------------------------------
-       CROSS ENVIRONMENT
-       --------------------------------------------------------- */
-
-    .iai-cross {
-      padding: 120px 0;
-      background: #08090a;
-    }
-
-    .iai-cross-grid {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 80px;
-      align-items: end;
-    }
-
-    .iai-maturity-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      border-top: 1px solid var(--iai-line);
-      border-left: 1px solid var(--iai-line);
-    }
-
-    .iai-maturity {
-      min-height: 130px;
-      padding: 22px;
-      border-right: 1px solid var(--iai-line);
-      border-bottom: 1px solid var(--iai-line);
-    }
-
-    .iai-maturity-key {
-      color: var(--iai-grey);
-      font-size: 9px;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    .iai-maturity-value {
-      margin-top: 28px;
-      color: var(--iai-white);
-      font-size: 17px;
-      font-weight: 750;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-    }
-
-    /* ---------------------------------------------------------
-       VALIDATION ROADMAP
-       --------------------------------------------------------- */
-
-    .iai-roadmap {
-      padding: 120px 0;
-      background: #0b0d0f;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-roadmap-list {
-      margin-top: 60px;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-roadmap-item {
-      display: grid;
-      grid-template-columns: 86px 270px minmax(0,1fr);
-      gap: 28px;
-      padding: 28px 0;
-      border-bottom: 1px solid var(--iai-line);
-      transition: background .25s ease;
-    }
-
-    .iai-roadmap-index {
-      color: var(--iai-grey-soft);
-      font-size: 11px;
-      letter-spacing: .16em;
-    }
-
-    .iai-roadmap-title {
-      color: var(--iai-white);
-      font-size: 14px;
-      font-weight: 750;
-      line-height: 1.4;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    .iai-roadmap-copy {
-      color: var(--iai-grey);
-      font-size: 14px;
-      line-height: 1.65;
-    }
-
-    @media (hover:hover) and (pointer:fine) {
-      .iai-roadmap-item:hover {
-        background: rgba(255,255,255,.025);
-      }
-    }
-
-    /* ---------------------------------------------------------
-       PARTNER
-       --------------------------------------------------------- */
-
-    .iai-partner {
-      padding: 120px 0;
-      background: #060708;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-partner-grid {
-      display: grid;
-      grid-template-columns: minmax(0,1.3fr) minmax(280px,.7fr);
-      gap: 70px;
-      align-items: end;
-    }
-
-    .iai-partner-types {
-      display: grid;
-      gap: 0;
-      border-top: 1px solid var(--iai-line);
-    }
-
-    .iai-partner-type {
-      padding: 13px 0;
-      color: var(--iai-grey);
-      border-bottom: 1px solid var(--iai-line);
-      font-size: 10px;
-      font-weight: 650;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    .iai-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 42px;
-    }
-
-    .iai-btn {
-      display: inline-flex;
-      min-height: 46px;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-      color: #090a0b;
-      background: #f0f1f2;
-      border: 1px solid #f0f1f2;
-      text-decoration: none;
-      font-size: 10px;
-      font-weight: 780;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-      transition:
-        background .2s ease,
-        color .2s ease,
-        border-color .2s ease;
-    }
-
-    .iai-btn-secondary {
-      color: var(--iai-white);
-      background: transparent;
-      border-color: rgba(255,255,255,.28);
-    }
-
-    @media (hover:hover) and (pointer:fine) {
-      .iai-btn:hover {
-        color: var(--iai-white);
-        background: transparent;
-      }
-
-      .iai-btn-secondary:hover {
-        color: #090a0b;
-        background: #f0f1f2;
-        border-color: #f0f1f2;
-      }
-    }
-
-    .iai-btn:focus-visible {
-      outline: 2px solid #fff;
-      outline-offset: 4px;
-    }
-
-    /* ---------------------------------------------------------
-       SCROLL REVEAL
-       --------------------------------------------------------- */
-
-    .iai-reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition:
-        opacity .7s ease,
-        transform .7s ease;
-    }
-
-    .iai-reveal.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .iai-reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-    }
-
-    /* ---------------------------------------------------------
-       TABLET / MOBILE
-       --------------------------------------------------------- */
-
-    @media (max-width: 900px) {
-
-      .iai-shell {
-        width: min(100% - 30px, 760px);
-      }
-
-      .iai-intro,
-      .iai-location,
-      .iai-cross,
-      .iai-roadmap,
-      .iai-partner {
-        padding-top: 82px;
-        padding-bottom: 82px;
-      }
-
-      .iai-route {
-        grid-template-columns: 1fr;
-      }
-
-      .iai-route-item {
-        min-height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--iai-line);
-      }
-
-      .iai-route-item:last-child {
-        border-bottom: none;
-      }
-
-      .iai-route-index {
-        margin-bottom: 14px;
-      }
-
-      .iai-location-grid,
-      .iai-cross-grid,
-      .iai-partner-grid {
-        grid-template-columns: 1fr;
-        gap: 55px;
-      }
-
-      .iai-roadmap-item {
-        grid-template-columns: 55px minmax(0,1fr);
-      }
-
-      .iai-roadmap-copy {
-        grid-column: 2;
-      }
-    }
-
-    @media (max-width: 560px) {
-
-      .iai-shell {
-        width: calc(100% - 24px);
-      }
-
-      .iai-title {
-        font-size: 36px;
-      }
-
-      .iai-location h3 {
-        font-size: 52px;
-      }
-
-      .iai-location-copy,
-      .iai-lead {
-        font-size: 16px;
-      }
-
-      .iai-env-node {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
-
-      .iai-maturity-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .iai-roadmap-item {
-        grid-template-columns: 42px minmax(0,1fr);
-        gap: 12px;
-      }
-
-      .iai-environment-panel {
-        padding: 22px;
-      }
-
-      .iai-actions {
-        display: grid;
-      }
-
-      .iai-btn {
-        width: 100%;
-      }
-    }
-
-  </style>
-
-
-  <!-- =======================================================
-       01 — EUROPEAN ARCHITECTURE INTRO
-       ======================================================= -->
-
-  <div class="iai-intro">
-    <div class="iai-shell iai-reveal">
-
-      <p class="iai-kicker">
-        European Development Architecture
-      </p>
-
-      <h2 class="iai-title">
-        The system baseline remains controlled.
-        The environment changes.
+    <div class="section-head">
+      <h2>
+        EUROPEAN<br>
+        DEVELOPMENT.
       </h2>
 
-      <p class="iai-lead">
-        IronArc's intended European operating model is structured around
-        engineering contrast. Development begins from the current UK base
-        before progressing toward northern and southern European validation
-        environments using the same controlled FORGE / TEMPER architecture.
+      <p>
+        One controlled FORGE / TEMPER baseline.
+        Two contrasting European validation environments.
       </p>
-
-      <div class="iai-route">
-
-        <div class="iai-route-item">
-          <span class="iai-route-index">01 // CURRENT</span>
-          <span class="iai-route-location">United Kingdom</span>
-          <span class="iai-route-function">
-            Development / Integration / Evidence
-          </span>
-        </div>
-
-        <div class="iai-route-item">
-          <span class="iai-route-index">02 // INTENDED</span>
-          <span class="iai-route-location">Estonia</span>
-          <span class="iai-route-function">
-            Long-Term Technology Base / Northern Validation
-          </span>
-        </div>
-
-        <div class="iai-route-item">
-          <span class="iai-route-index">03 // PLANNED</span>
-          <span class="iai-route-location">Southern Spain</span>
-          <span class="iai-route-function">
-            Field Validation / Southern Environment
-          </span>
-        </div>
-
-      </div>
-
-      <div class="iai-statusline">
-        <span>
-          STRATEGY //
-          <strong>EUROPE</strong>
-        </span>
-
-        <span>
-          ARCHITECTURE //
-          <strong>PLATFORM-INDEPENDENT</strong>
-        </span>
-
-        <span>
-          METHOD //
-          <strong>EVIDENCE-LED</strong>
-        </span>
-      </div>
-
     </div>
-  </div>
 
 
-  <!-- =======================================================
-       02 — UNITED KINGDOM
-       ======================================================= -->
+    <div class="iai-europe-grid">
 
-  <div class="iai-location iai-uk">
-    <div class="iai-shell iai-location-grid iai-reveal">
+      <article class="iai-europe-card estonia">
 
-      <div>
-
-        <div class="iai-location-number">
-          01 // DEVELOPMENT ORIGIN
+        <div class="iai-eyebrow">
+          01 // NORTHERN EUROPE
         </div>
 
-        <h3>United<br>Kingdom</h3>
+        <h3>
+          Estonia
+        </h3>
 
-        <div class="iai-location-sub">
-          Current Development Base
-        </div>
-
-        <p class="iai-location-copy">
-          Current software development, prototype integration, bench
-          validation, system architecture control and evidence capture
-          originate from the United Kingdom.
-        </p>
-
-        <div class="iai-conditions">
-          <span class="iai-condition">Software</span>
-          <span class="iai-condition">Integration</span>
-          <span class="iai-condition">Bench Validation</span>
-          <span class="iai-condition">Provenance</span>
-          <span class="iai-condition">System Control</span>
-        </div>
-
-      </div>
-
-      <aside class="iai-environment-panel">
-
-        <div class="iai-panel-label">
-          Operational Development State
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Location State</span>
-          <span class="iai-readout-value">Current</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Primary Function</span>
-          <span class="iai-readout-value">Development</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">System Baseline</span>
-          <span class="iai-readout-value">C4.10 Controlled</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Evidence State</span>
-          <span class="iai-readout-value">Active</span>
-        </div>
-
-        <div class="iai-datum"></div>
-
-      </aside>
-
-    </div>
-  </div>
-
-
-  <!-- =======================================================
-       03 — ESTONIA
-       ======================================================= -->
-
-  <div class="iai-location iai-estonia">
-    <div class="iai-shell iai-location-grid iai-reveal">
-
-      <div>
-
-        <div class="iai-location-number">
-          02 // NORTHERN EUROPE
-        </div>
-
-        <h3>Estonia</h3>
-
-        <div class="iai-location-sub">
+        <div class="iai-role">
           Intended Long-Term Technology Base
         </div>
 
-        <p class="iai-location-copy">
-          Estonia represents IronArc's intended long-term European base for
-          software, autonomy, systems engineering and deep-tech
-          collaboration.
+        <p>
+          Software, autonomy and systems engineering,
+          with a future northern validation pathway
+          for low-temperature, low-light and winter conditions.
         </p>
 
-        <p class="iai-location-copy">
-          The northern European environment provides a future validation
-          pathway for evaluating FORGE and TEMPER under reduced-light,
-          low-temperature and winter operating conditions.
-        </p>
-
-        <div class="iai-conditions">
-          <span class="iai-condition">Cold</span>
-          <span class="iai-condition">Low Light</span>
-          <span class="iai-condition">Winter</span>
-          <span class="iai-condition">Remote Operations</span>
+        <div class="iai-tags">
+          <span>Cold</span>
+          <span>Low Light</span>
+          <span>Winter</span>
         </div>
 
-      </div>
+      </article>
 
-      <aside class="iai-environment-panel">
 
-        <div class="iai-panel-label">
-          Northern Systems Environment
+      <article class="iai-europe-card spain">
+
+        <div class="iai-eyebrow">
+          02 // SOUTHERN EUROPE
         </div>
 
-        <div class="iai-readout">
-          <span class="iai-readout-key">Location State</span>
-          <span class="iai-readout-value">Intended</span>
-        </div>
+        <h3>
+          Southern Spain
+        </h3>
 
-        <div class="iai-readout">
-          <span class="iai-readout-key">Environment</span>
-          <span class="iai-readout-value">Northern Europe</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Validation Character</span>
-          <span class="iai-readout-value">
-            Low Temp / Low Light
-          </span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Engineering Objective</span>
-          <span class="iai-readout-value">
-            Northern Validation
-          </span>
-        </div>
-
-        <div class="iai-datum"></div>
-
-      </aside>
-
-    </div>
-  </div>
-
-
-  <!-- =======================================================
-       04 — VALIDATION ENVELOPE
-       ======================================================= -->
-
-  <div class="iai-envelope">
-    <div class="iai-shell iai-reveal">
-
-      <div class="iai-envelope-head">
-
-        <p class="iai-kicker">
-          Validation Envelope
-        </p>
-
-        <h2 class="iai-title iai-title-small">
-          One controlled baseline.
-          Contrasting conditions.
-        </h2>
-
-      </div>
-
-      <div class="iai-envelope-flow">
-
-        <div class="iai-env-node">
-          <div class="iai-env-key">Northern Gate</div>
-          <div class="iai-env-value">Estonia</div>
-        </div>
-
-        <div class="iai-env-node">
-          <div class="iai-env-key">Condition Set</div>
-          <div class="iai-env-value">
-            Low Temperature / Low Light / Winter Exposure
-          </div>
-        </div>
-
-        <div class="iai-baseline-node">
-          <span class="iai-baseline-name">
-            FORGE / TEMPER
-          </span>
-
-          <span class="iai-baseline-status">
-            CONTROLLED SYSTEM BASELINE
-          </span>
-        </div>
-
-        <div class="iai-env-node">
-          <div class="iai-env-key">Condition Set</div>
-          <div class="iai-env-value">
-            Heat / Solar Load / Coastal Exposure
-          </div>
-        </div>
-
-        <div class="iai-env-node">
-          <div class="iai-env-key">Southern Gate</div>
-          <div class="iai-env-value">Southern Spain</div>
-        </div>
-
-      </div>
-
-      <div class="iai-statusline" style="margin-top:50px;">
-        <span>
-          ENVIRONMENT //
-          <strong>VARIABLE</strong>
-        </span>
-
-        <span>
-          SYSTEM ARCHITECTURE //
-          <strong>CONTROLLED</strong>
-        </span>
-
-        <span>
-          OUTPUT //
-          <strong>COMPARABLE EVIDENCE</strong>
-        </span>
-      </div>
-
-    </div>
-  </div>
-
-
-  <!-- =======================================================
-       05 — SOUTHERN SPAIN
-       ======================================================= -->
-
-  <div class="iai-location iai-spain">
-    <div class="iai-shell iai-location-grid iai-reveal">
-
-      <div>
-
-        <div class="iai-location-number">
-          03 // SOUTHERN EUROPE
-        </div>
-
-        <h3>Southern<br>Spain</h3>
-
-        <div class="iai-location-sub">
+        <div class="iai-role">
           Planned Field-Validation Region
         </div>
 
-        <p class="iai-location-copy">
-          Southern Spain provides the complementary environment for
-          hot-weather, coastal and open-terrain system evaluation.
+        <p>
+          Hot-weather, coastal and open-terrain
+          system evaluation under representative
+          southern European operating conditions.
         </p>
 
-        <p class="iai-location-copy">
-          This phase is intended to assess system integration, operator
-          workflow, communications and evidence capture under materially
-          different conditions from the northern validation programme.
-        </p>
-
-        <div class="iai-conditions">
-          <span class="iai-condition">Heat</span>
-          <span class="iai-condition">High Solar Load</span>
-          <span class="iai-condition">Coastal</span>
-          <span class="iai-condition">Dry Terrain</span>
+        <div class="iai-tags">
+          <span>Heat</span>
+          <span>Solar</span>
+          <span>Coastal</span>
         </div>
 
-      </div>
-
-      <aside class="iai-environment-panel">
-
-        <div class="iai-panel-label">
-          Southern Systems Environment
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Location State</span>
-          <span class="iai-readout-value">Planned</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Environment</span>
-          <span class="iai-readout-value">Southern Europe</span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Validation Character</span>
-          <span class="iai-readout-value">
-            Heat / Solar / Coastal
-          </span>
-        </div>
-
-        <div class="iai-readout">
-          <span class="iai-readout-key">Engineering Objective</span>
-          <span class="iai-readout-value">
-            Southern Validation
-          </span>
-        </div>
-
-        <div class="iai-datum"></div>
-
-      </aside>
+      </article>
 
     </div>
-  </div>
 
 
-  <!-- =======================================================
-       06 — CROSS-ENVIRONMENT VALIDATION
-       ======================================================= -->
-
-  <div class="iai-cross">
-    <div class="iai-shell iai-cross-grid iai-reveal">
-
-      <div>
-
-        <p class="iai-kicker">
-          Cross-Environment Validation
-        </p>
-
-        <h2 class="iai-title iai-title-small">
-          One architecture.
-          Contrasting conditions.
-        </h2>
-
-        <p class="iai-lead">
-          IronArc's European strategy is based on environmental contrast,
-          not geography for presentation's sake.
-        </p>
-
-        <p class="iai-lead">
-          The intended programme moves the same controlled FORGE / TEMPER
-          architecture through northern and southern validation environments,
-          creating comparable evidence across materially different operating
-          conditions.
-        </p>
-
-      </div>
-
-      <div class="iai-maturity-grid">
-
-        <div class="iai-maturity">
-          <div class="iai-maturity-key">System Baseline</div>
-          <div class="iai-maturity-value">Controlled</div>
-        </div>
-
-        <div class="iai-maturity">
-          <div class="iai-maturity-key">Northern Gate</div>
-          <div class="iai-maturity-value">Planned</div>
-        </div>
-
-        <div class="iai-maturity">
-          <div class="iai-maturity-key">Southern Gate</div>
-          <div class="iai-maturity-value">Planned</div>
-        </div>
-
-        <div class="iai-maturity">
-          <div class="iai-maturity-key">
-            Cross-Environment Evidence
-          </div>
-          <div class="iai-maturity-value">Target</div>
-        </div>
-
-      </div>
-
+    <div class="iai-baseline">
+      <strong>FORGE / TEMPER BASELINE</strong>
+      &nbsp;//&nbsp;
+      CONTROLLED ARCHITECTURE
+      &nbsp;//&nbsp;
+      CONTRASTING ENVIRONMENTS
     </div>
-  </div>
 
 
-  <!-- =======================================================
-       07 — NEXT VALIDATION PHASE
-       ======================================================= -->
+    <div class="section-head">
 
-  <div class="iai-roadmap">
-    <div class="iai-shell iai-reveal">
-
-      <p class="iai-kicker">
-        Technical Validation Roadmap
-      </p>
-
-      <h2 class="iai-title iai-title-small">
-        Next validation phase.
+      <h2>
+        NEXT<br>
+        VALIDATION.
       </h2>
 
-      <p class="iai-lead">
-        The committed desktop baseline establishes the starting point.
-        The next engineering gates move FORGE from controlled software
-        validation toward representative field-system integration.
+      <p>
+        From validated desktop architecture
+        to representative field deployment.
       </p>
 
-      <div class="iai-roadmap-list">
+    </div>
 
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">01</div>
-          <div class="iai-roadmap-title">
-            Tablet / Field HMI
-          </div>
-          <div class="iai-roadmap-copy">
-            Verify readability, touch ergonomics, control geometry,
-            workflow continuity and sustained-use operation on the
-            intended tablet operator interface.
-          </div>
+
+    <div class="iai-validation-grid">
+
+      <article class="iai-validation-card">
+
+        <div class="iai-validation-index">
+          01 // C4.11
         </div>
 
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">02</div>
-          <div class="iai-roadmap-title">
-            Live Sensor & Telemetry
-          </div>
-          <div class="iai-roadmap-copy">
-            Validate authenticated camera, GPS and vehicle telemetry
-            with synchronized evidence capture and explicit
-            loss/recovery state handling.
-          </div>
-        </div>
+        <h3>
+          Field HMI
+        </h3>
 
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">03</div>
-          <div class="iai-roadmap-title">
-            Third-Party Platform Integration
-          </div>
-          <div class="iai-roadmap-copy">
-            Demonstrate TEMPER / FORGE on a representative external UAV
-            without requiring a proprietary IronArc aircraft.
-          </div>
-        </div>
+        <p>
+          Tablet acceptance, touch ergonomics,
+          readability and field-operator workflow.
+        </p>
 
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">04</div>
-          <div class="iai-roadmap-title">
-            Deployment & Degraded Mode
-          </div>
-          <div class="iai-roadmap-copy">
-            Exercise start-up, connectivity loss, stale-data rejection,
-            system recovery and local evidence persistence under
-            controlled test conditions.
-          </div>
-        </div>
-
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">05</div>
-          <div class="iai-roadmap-title">
-            Environmental Field Validation
-          </div>
-          <div class="iai-roadmap-copy">
-            Generate repeatable engineering evidence across northern
-            cold-weather and southern hot/coastal European environments.
-          </div>
-        </div>
-
-        <div class="iai-roadmap-item">
-          <div class="iai-roadmap-index">06</div>
-          <div class="iai-roadmap-title">
-            External Evaluation
-          </div>
-          <div class="iai-roadmap-copy">
-            Progress toward independent technical partner, operator and
-            customer evaluation using controlled test evidence.
-          </div>
-        </div>
-
-      </div>
-
-      <div class="iai-statusline" style="margin-top:45px;">
-        <span>
-          CURRENT //
-          <strong>DESKTOP BASELINE</strong>
+        <span class="iai-state">
+          Next Gate
         </span>
 
-        <span>
-          NEXT //
-          <strong>REPRESENTATIVE INTEGRATION</strong>
+      </article>
+
+
+      <article class="iai-validation-card">
+
+        <div class="iai-validation-index">
+          02 // C4.12
+        </div>
+
+        <h3>
+          Hardware Integration
+        </h3>
+
+        <p>
+          Real camera, GPS and telemetry
+          integrated through a representative
+          third-party unmanned platform.
+        </p>
+
+        <span class="iai-state">
+          Planned
         </span>
 
-        <span>
-          TARGET //
-          <strong>EXTERNAL VALIDATION</strong>
+      </article>
+
+
+      <article class="iai-validation-card">
+
+        <div class="iai-validation-index">
+          03 // FIELD
+        </div>
+
+        <h3>
+          Deployment Evidence
+        </h3>
+
+        <p>
+          Controlled deployment, degraded-link
+          recovery and external partner evaluation.
+        </p>
+
+        <span class="iai-state">
+          Target
         </span>
-      </div>
+
+      </article>
 
     </div>
-  </div>
 
 
-  <!-- =======================================================
-       08 — PARTNER / INVEST
-       ======================================================= -->
-
-  <div class="iai-partner">
-    <div class="iai-shell iai-partner-grid iai-reveal">
+    <div class="iai-partner">
 
       <div>
 
-        <p class="iai-kicker">
-          Partner / Invest
-        </p>
+        <div class="iai-eyebrow">
+          PARTNER / INVEST
+        </div>
 
-        <h2 class="iai-title iai-title-small">
-          Build the next validation phase with us.
+        <h2>
+          Build the next
+          validation phase.
         </h2>
 
-        <p class="iai-lead">
-          IronArc is seeking European industrial, technical and validation
-          partners capable of helping convert internal engineering evidence
-          into repeatable external validation.
+        <p>
+          IronArc is seeking European technical,
+          industrial and validation partners to move
+          the current engineering baseline into
+          representative field deployment.
         </p>
-
-        <div class="iai-actions">
-
-          <!-- CHANGE EMAIL ADDRESS IF REQUIRED -->
-
-          <a
-            class="iai-btn"
-            href="mailto:contact@ironarcindustries.uk?subject=IronArc%20Partnership%20Enquiry">
-            Partner With IronArc
-          </a>
-
-          <a
-            class="iai-btn iai-btn-secondary"
-            href="mailto:contact@ironarcindustries.uk?subject=IronArc%20Investment%20Enquiry">
-            Invest In The Next Phase
-          </a>
-
-        </div>
 
       </div>
 
-      <div>
 
-        <div class="iai-panel-label">
-          Priority Relationships
-        </div>
+      <div class="iai-partner-actions">
 
-        <div class="iai-partner-types">
-          <div class="iai-partner-type">
-            Critical Infrastructure Operators
-          </div>
-          <div class="iai-partner-type">
-            Unmanned Systems Integrators
-          </div>
-          <div class="iai-partner-type">
-            Autonomy & Robotics Programmes
-          </div>
-          <div class="iai-partner-type">
-            Test & Validation Organisations
-          </div>
-          <div class="iai-partner-type">
-            Industrial Innovation Partners
-          </div>
-          <div class="iai-partner-type">
-            Research & Deep-Tech Ecosystems
-          </div>
-          <div class="iai-partner-type">
-            Strategic Investors
-          </div>
-        </div>
+        <a
+          class="iai-partner-btn"
+          href="#contact">
+          Partner / Invest
+        </a>
 
       </div>
 
     </div>
+
   </div>
-
-
-  <!-- =======================================================
-       INTERACTION
-       Subtle reveal only — no unnecessary animation
-       ======================================================= -->
-
-  <script>
-    (() => {
-      const root = document.querySelector('#european-validation');
-
-      if (!root || root.dataset.initialized === 'true') {
-        return;
-      }
-
-      root.dataset.initialized = 'true';
-
-      const elements = root.querySelectorAll('.iai-reveal');
-
-      const reduceMotion = window.matchMedia(
-        '(prefers-reduced-motion: reduce)'
-      ).matches;
-
-      if (
-        reduceMotion ||
-        !('IntersectionObserver' in window)
-      ) {
-        elements.forEach((element) => {
-          element.classList.add('is-visible');
-        });
-
-        return;
-      }
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.12,
-          rootMargin: '0px 0px -50px 0px'
-        }
-      );
-
-      elements.forEach((element) => {
-        observer.observe(element);
-      });
-    })();
-  </script>
 
 </section>
 
