@@ -257,14 +257,19 @@
 
       const link = event.target.closest("a");
       if (!link) return;
+const href = link.getAttribute("href") || "";
 
-      const label = link.textContent
-        .replace(/→/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-        .toUpperCase();
+const label = link.textContent
+  .replace(/→/g, "")
+  .replace(/\s+/g, " ")
+  .trim()
+  .toUpperCase();
 
-      const eventName = labels.get(label);
+      let eventName = labels.get(label);
+
+      if (href === "#contact") {
+         eventName = "contact_click";
+      }
 
       if (!eventName) return;
 
