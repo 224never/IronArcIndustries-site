@@ -10,7 +10,7 @@ CNAME retains the existing GitHub Pages custom domain.
 - TEMPER: intelligence / perception layer.
 - KASSCORE: interoperability / shared operational state layer.
 - Validate FORGE and TEMPER first. Third-party UAV/UGV/USV and external command-system interoperability is the development direction, not universal compatibility.
-- Spain/Europe is the target ecosystem direction. No established office, incorporation or relocation is claimed.
+- Europe is the target operating base, with a Europe-wide partner and validation network. No country-specific base or completed incorporation is claimed.
 - Invite technical support, pilot partners, validation opportunities, investors and ecosystem partners.
 
 Only update capability statements when supported by current evidence. Keep internal implementation details out of the public site.
@@ -62,3 +62,7 @@ An empty measurement ID and a production-host guard prevent accidental collectio
 
 Consent UI, an active tracking ID, account access and a completed privacy notice are not supplied by this placeholder.
 Official tag guide: https://developers.google.com/tag-platform/gtagjs
+
+## Positioning pass
+
+The site remains one page: architecture, applications, validation, Europe, team and contact are anchors, not separate pages with duplicate metadata. No sensitive identity capabilities or unconfirmed customer/partner claims are public. System font rendering and static HTML avoid font downloads, third-party scripts and layout-shifting media. Hosting controls cache headers; no production caching or Core Web Vitals score is claimed from local checks.

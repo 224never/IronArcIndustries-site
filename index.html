@@ -3,21 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IronArc Industries | UAV Command &amp; Control Software</title>
-<meta name="description" content="Developing UAV command and control, edge AI perception and interoperability for multi-domain robotics. FORGE and TEMPER validation first, connected by KASSCORE.">
+<title>IronArc Industries | Autonomous Systems Software</title>
+<meta name="description" content="IronArc Industries develops command, perception and interoperability software for autonomous platforms, robotics and field operations across Europe.">
 <link rel="canonical" href="https://ironarcindustries.uk/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#090C0F">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="IronArc Industries">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://ironarcindustries.uk/">
-<meta property="og:title" content="IronArc Industries | UAV Command &amp; Control Software">
-<meta property="og:description" content="Developing UAV command and control, edge AI perception and interoperability for multi-domain robotics. FORGE and TEMPER validation first, connected by KASSCORE.">
+<meta property="og:title" content="IronArc Industries | Autonomous Systems Software">
+<meta property="og:description" content="IronArc Industries develops command, perception and interoperability software for autonomous platforms, robotics and field operations across Europe.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IronArc Industries | UAV Command &amp; Control Software">
-<meta name="twitter:description" content="Developing UAV command and control, edge AI perception and interoperability for multi-domain robotics. FORGE and TEMPER validation first, connected by KASSCORE.">
+<meta name="twitter:title" content="IronArc Industries | Autonomous Systems Software">
+<meta name="twitter:description" content="IronArc Industries develops command, perception and interoperability software for autonomous platforms, robotics and field operations across Europe.">
 <!-- SEARCH CONSOLE: Insert Google's exact google-site-verification meta tag here.
      Alternatively put Google's supplied HTML verification file at the site root. See README.md. -->
 <!-- GA4 is intentionally inactive. See analytics.example.js and README.md before enabling. -->
@@ -31,7 +33,7 @@
       "name": "IronArc Industries",
       "url": "https://ironarcindustries.uk/",
       "email": "contact@ironarcindustries.uk",
-      "description": "Developing command, intelligence and interoperability software for autonomous systems."
+      "description": "IronArc Industries develops command, perception and interoperability software for autonomous systems, robotics and field operations."
     },
     {
       "@type": "WebSite",
@@ -127,7 +129,7 @@
     .profiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .profile{position:relative;overflow:hidden;padding:28px;min-height:350px}
     .profile::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--profile)}
-    .profile.civil{--profile:var(--civil)} .profile.restricted{--profile:var(--restricted)}
+    .profile.civil{--profile:var(--civil)} .profile.integration{--profile:var(--restricted)}
     .profile .mini{color:var(--profile);font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
     .profile h3{margin:10px 0 8px;font-family:"Arial Black",Impact,sans-serif;font-size:34px;text-transform:uppercase}
     .profile p{color:var(--muted);min-height:58px}
@@ -137,29 +139,27 @@
     .profile-foot{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
 
     .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    .status{display:inline-block;padding:4px 7px;border:1px solid var(--line2);font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
-    .validated{color:var(--good);border-color:rgba(111,146,120,.5)}
-    .building{color:var(--watch);border-color:rgba(195,154,82,.5)}
 
-    .uae{
-      display:grid;grid-template-columns:1.2fr .8fr;gap:12px
-    }
-    .uae .panel{min-height:240px}
-    .uae ul{padding-left:18px;margin:12px 0 0}
-    .uae li{margin:8px 0}
+
+
+
+
+
+
+
     .big{font-family:"Arial Black",Impact,sans-serif;font-size:31px;line-height:1.05;text-transform:uppercase;letter-spacing:-.02em}
 
-    .moat{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .signal{padding:28px;min-height:220px}
-    .signal p{color:var(--muted)}
-    .metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
-    .metric{border:1px solid var(--line);background:var(--surface2);padding:16px}
-    .metric b{display:block;font-size:17px;margin-bottom:4px}
-    .metric span{font-size:11px;color:var(--muted)}
+
+
+
+
+
+
+
 
     .founder{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .founder .panel{min-height:240px}
-    .quote{font-family:"Arial Black",Impact,sans-serif;font-size:34px;line-height:1.05;text-transform:uppercase;letter-spacing:-.02em}
+
     .founder-line{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
 
     .ask{padding:30px;background:var(--surface);border:1px solid var(--line)}
@@ -178,7 +178,7 @@
       section{padding:58px 0}
       .section-head,.grid3,.solution,.profiles,.proof-grid,.uae,.moat,.founder,.ask-top{grid-template-columns:1fr}
       .chain{grid-template-columns:repeat(2,1fr)}
-      .metric-row{grid-template-columns:1fr 1fr}
+
       .footer-grid{flex-direction:column;align-items:flex-start}
       .footer-note{text-align:left}
     }
@@ -257,47 +257,13 @@
     opacity:.16;
   }
 
-  .iai-europe-card.europe{
-    background:
-      linear-gradient(
-        135deg,
-        #080b0d 0%,
-        #10171b 55%,
-        #172027 100%
-      );
-  }
 
-  .iai-europe-card.europe::after{
-    background:
-      linear-gradient(
-        180deg,
-        rgba(0,112,255,.25) 0 33%,
-        rgba(0,0,0,.12) 33% 66%,
-        rgba(255,255,255,.18) 66% 100%
-      );
-    mix-blend-mode:soft-light;
-  }
 
-  .iai-europe-card.spain{
-    background:
-      linear-gradient(
-        135deg,
-        #0b0a08 0%,
-        #17130f 55%,
-        #221b12 100%
-      );
-  }
 
-  .iai-europe-card.spain::after{
-    background:
-      linear-gradient(
-        180deg,
-        rgba(170,0,0,.24) 0 25%,
-        rgba(230,190,0,.18) 25% 75%,
-        rgba(170,0,0,.24) 75% 100%
-      );
-    mix-blend-mode:soft-light;
-  }
+
+
+
+
 
   .iai-europe-card > *{
     position:relative;
@@ -376,103 +342,29 @@
     color:var(--iai-text);
   }
 
-  .iai-validation-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    border-top:1px solid var(--iai-line);
-    border-left:1px solid var(--iai-line);
-  }
 
-  .iai-validation-card{
-    min-height:210px;
-    padding:26px;
-    border-right:1px solid var(--iai-line);
-    border-bottom:1px solid var(--iai-line);
-  }
 
-  .iai-validation-index{
-    margin-bottom:38px;
-    color:var(--iai-muted);
-    font-size:9px;
-    font-weight:900;
-    letter-spacing:.16em;
-  }
 
-  .iai-validation-card h3{
-    margin:0 0 12px;
-    font-family:"Arial Black",Impact,sans-serif;
-    font-size:19px;
-    line-height:1.15;
-    text-transform:uppercase;
-  }
 
-  .iai-validation-card p{
-    margin:0;
-    color:var(--iai-muted);
-    font-size:13px;
-    line-height:1.55;
-  }
 
-  .iai-state{
-    display:inline-block;
-    margin-top:20px;
-    padding:6px 8px;
-    border:1px solid var(--iai-line);
-    color:var(--iai-muted);
-    font-size:9px;
-    font-weight:900;
-    letter-spacing:.13em;
-    text-transform:uppercase;
-  }
 
-  .iai-partner{
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-    gap:46px;
-    align-items:end;
-    padding:64px 0 72px;
-  }
 
-  .iai-partner h2{
-    margin:0;
-    font-family:"Arial Black",Impact,sans-serif;
-    font-size:clamp(30px,4.5vw,52px);
-    line-height:1;
-    text-transform:uppercase;
-  }
 
-  .iai-partner p{
-    max-width:670px;
-    margin:22px 0 0;
-    color:var(--iai-muted);
-    font-size:14px;
-    line-height:1.6;
-  }
 
-  .iai-partner-actions{
-    display:flex;
-    justify-content:flex-end;
-  }
 
-  .iai-partner-btn{
-    display:inline-flex;
-    min-height:46px;
-    align-items:center;
-    justify-content:center;
-    padding:0 20px;
-    border:1px solid rgba(255,255,255,.3);
-    color:var(--iai-text);
-    text-decoration:none;
-    font-size:10px;
-    font-weight:900;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-  }
 
-  .iai-partner-btn:hover{
-    background:#f2f3f4;
-    color:#090a0b;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media(max-width:800px){
     .iai-compact .wrap{
@@ -490,13 +382,9 @@
 
     .iai-europe-grid,
     .iai-validation-grid,
-    .iai-partner{
-      grid-template-columns:1fr;
-    }
 
-    .iai-partner-actions{
-      justify-content:flex-start;
-    }
+
+
 
     .iai-europe-card{
       min-height:280px;
@@ -528,6 +416,43 @@ h1{font-size:clamp(42px,12vw,57px)}h2{font-size:30px}.profile h3{font-size:28px}
 }
 @media(max-width:360px){.nav .wordmark{min-width:120px}.navcta{padding:0 7px;font-size:8px}.nav{gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Readability and responsive refinements; retain the existing visual system. */
+:root{--dim:#97A39D}
+h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
+.hero-lead{font-size:clamp(20px,2.4vw,28px);font-weight:700;margin:24px 0 12px}
+.hero-copy{margin:0;max-width:740px}
+.hero-inner{width:100%;padding-left:26px;padding-right:26px}
+.card p,.panel p,.profile li,.scope-note{font-size:16px}
+.index,.eyebrow,.mini,.founder-line{font-size:12px}
+.four-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.architecture-flow{grid-template-columns:repeat(3,minmax(0,1fr))}
+.architecture-flow span{font-size:12px;padding:16px 12px}
+.section-link{display:inline-block;margin-top:24px;font-size:12px;font-weight:800;letter-spacing:.08em;line-height:1.6;text-decoration:underline;text-underline-offset:5px;padding:10px 0}
+.ask-actions .section-link{margin:0;align-self:center}
+.iai-europe-card{background:var(--surface)}
+.iai-compact .section-head{padding:20px 0 30px}
+.iai-compact .section-head p,.iai-europe-card p{font-size:16px}
+.iai-europe-card h3{font-size:clamp(26px,3.2vw,42px);overflow-wrap:normal}
+.footer-note{font-size:12px}
+@media(max-width:1100px){.navlinks{gap:14px;font-size:10px}.four-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){
+.hero-inner{padding:58px 26px}
+.navlinks{display:flex;flex-wrap:wrap;overflow:visible;gap:4px 16px;font-size:11px}
+.navlinks a{padding:8px 0}
+[id]{scroll-margin-top:190px}
+}
+@media(max-width:600px){
+.four-grid,.architecture-flow{grid-template-columns:1fr}
+.architecture-flow span{border-right:0;border-bottom:1px solid var(--line)}
+.architecture-flow span:last-child{border-bottom:0}
+.hero-inner{padding:48px 20px}
+.iai-compact .wrap{width:100%;padding:0 20px}
+.iai-europe-card{padding:24px}
+.navcta{font-size:10px}
+}
+:root{--civil:#76A7D5;--restricted:#C58F99}
+.iai-eyebrow,.iai-tags span,.iai-baseline,.iai-role{font-size:12px}
 </style>
 </head>
 <body>
@@ -540,84 +465,74 @@ h1{font-size:clamp(42px,12vw,57px)}h2{font-size:30px}.profile h3{font-size:28px}
 </div></header>
 <main id="top">
 <section class="hero" aria-labelledby="hero-title"><div class="wrap hero-inner">
-<div class="eyebrow">Autonomous systems mission software</div>
-<h1 id="hero-title">COMMAND.<br>PERCEIVE.<br><span class="stroke">CONNECT.</span></h1>
-<p class="hero-copy">IronArc Industries is developing command, intelligence and interoperability software for autonomous systems. Built around FORGE, TEMPER and KASSCORE, our direction is platform-agnostic coordination across third-party air, ground and surface vehicles and external command systems.</p>
-<div class="hero-actions"><a class="btn primary" href="#architecture">EXPLORE THE ARCHITECTURE</a><a class="btn" href="#contact">DISCUSS A PILOT</a></div>
-<div class="hero-tag">FORGE / TEMPER VALIDATION FIRST. KASSCORE CONNECTS THE LAYERS.</div>
+<div class="eyebrow">IronArc Industries // European autonomous systems software</div>
+<h1 id="hero-title">COMMAND.<br>INTELLIGENCE.<br><span class="stroke">INTEROPERABILITY.</span></h1>
+<p class="hero-lead">Software infrastructure for autonomous systems.</p><p class="hero-copy">IronArc develops software that connects sensing, operator control, perception and shared operational state across autonomous platforms.</p>
+<div class="hero-actions"><a class="btn primary" href="#architecture">VIEW ARCHITECTURE</a><a class="btn" href="#contact">PARTNER / INVEST</a></div>
+<div class="hero-tag">ONE ARCHITECTURE. MULTIPLE PLATFORMS. VALIDATION FIRST.</div>
 </div></section>
 
-<section id="thesis"><div class="wrap">
-<div class="section-head"><h2>ONE MISSION.<br>DISCONNECTED SYSTEMS.</h2><p>Operators work across vehicles, sensors and command tools that do not share a consistent operational picture. IronArc is developing software to bring mission control, perception and shared state together.</p></div>
-<div class="grid3">
-<article class="card"><div class="index">01 // COMMAND</div><h3>Keep operators in control</h3><p>Bring mission context, platform status and operator decisions into a coherent command workflow.</p></article>
-<article class="card"><div class="index">02 // INTELLIGENCE</div><h3>Make sensing useful</h3><p>Connect sensor observations and edge AI perception to the mission, with evidence operators can review.</p></article>
-<article class="card"><div class="index">03 // INTEROPERABILITY</div><h3>Work across platforms</h3><p>Connect compatible third-party systems through validated integrations, without tying the architecture to one vehicle manufacturer.</p></article>
-</div></div></section>
+<section id="thesis"><div class="wrap"><div class="section-head"><h2>SENSE.<br>UNDERSTAND.<br>ACT.</h2><p>IronArc is a European-focused autonomous systems software and integration company. We connect operator workflows, machine-assisted sensing and system data across compatible third-party platforms.</p></div></div></section>
 
 <section id="architecture"><div class="wrap">
-<div class="section-head"><h2>THREE LAYERS.<br>SHARED PURPOSE.</h2><p>FORGE commands. TEMPER perceives. KASSCORE is the connective layer for interoperability and shared operational state. FORGE and TEMPER validation comes first; broader integration follows the evidence.</p></div>
+<div class="section-head"><h2>THREE LAYERS.<br>ONE ARCHITECTURE.</h2><p>Command, perception and interoperability for autonomous platforms. FORGE and TEMPER validation comes first, with KASSCORE connecting shared operational state across systems.</p></div>
 <div class="solution">
-<article class="panel" id="forge"><h3>FORGE</h3><div class="index">COMMAND LAYER</div><p>UAV command and control, mission workflows, platform status and operator decision support.</p></article>
-<article class="panel" id="temper"><h3>TEMPER</h3><div class="index">INTELLIGENCE / PERCEPTION LAYER</div><p>Sensor interpretation and edge AI perception, connecting observations to mission context and reviewable evidence.</p></article>
-<article class="panel" id="kasscore"><h3>KASSCORE</h3><div class="index">INTEROPERABILITY / SHARED STATE</div><p>The planned connective layer between FORGE, TEMPER, compatible third-party platforms and external command systems.</p></article>
+<article class="panel" id="forge"><h3>FORGE</h3><div class="index">COMMAND</div><p>Operator control, spatial awareness, mission workflow, evidence and reporting.</p></article>
+<article class="panel" id="temper"><h3>TEMPER</h3><div class="index">INTELLIGENCE</div><p>Machine-assisted perception, classification, sensing, tracking and confidence-based observations.</p></article>
+<article class="panel" id="kasscore"><h3>KASSCORE</h3><div class="index">INTEROPERABILITY</div><p>Shared operational state, system connectivity, track association and cross-platform data exchange.</p></article>
 </div>
-<div class="chain" aria-label="Target integration scope"><span>THIRD-PARTY UAV</span><span>UGV</span><span>USV</span><span>SENSORS</span><span>FORGE</span><span>TEMPER</span><span>KASSCORE</span><span>EXTERNAL COMMAND</span></div>
-<p class="scope-note">Target scope: unmanned aerial vehicles (UAV), unmanned ground vehicles (UGV) and unmanned surface vessels (USV). Compatibility is established integration by integration; cross-domain interoperability is the development direction.</p>
+<div class="chain architecture-flow"><span>TEMPER OBSERVES</span><span>KASSCORE ASSOCIATES</span><span>FORGE ENABLES OPERATOR ACTION</span></div>
+<p class="scope-note">Designed for unmanned aerial vehicles (UAV), ground vehicles (UGV), surface vessels (USV), robotics and external command systems. Compatibility is established through prototype integration and controlled testing.</p>
+<a class="section-link" href="#profiles">EXPLORE APPLICATIONS <span aria-hidden="true">→</span></a>
 </div></section>
 
 <section id="profiles"><div class="wrap">
-<div class="section-head"><h2>APPLICATIONS.<br>VALIDATION IN CONTEXT.</h2><p>Drone inspection and UAS operations provide practical settings to validate command and perception workflows. Multi-domain robotics is the broader integration direction.</p></div>
+<div class="section-head"><h2>MULTIPLE PLATFORMS.<br>PRACTICAL APPLICATIONS.</h2><p>Application areas for representative validation and software-led capability development, from UAV command and control software to field robotics integration.</p></div>
 <div class="profiles">
-<article class="profile civil"><div class="mini">Initial validation applications</div><h3>INSPECTION &amp;<br>UAS OPERATIONS</h3><p>Mission software for operators working with infrastructure, inspection evidence and unmanned aircraft systems.</p><ul><li>Mission planning and operator workflow assessment</li><li>Camera, location and telemetry integration</li><li>Perception-assisted inspection and evidence review</li><li>Platform readiness and mission-state visibility</li></ul><div class="profile-foot">FOCUS // FORGE + TEMPER VALIDATION</div></article>
-<article class="profile restricted"><div class="mini">Platform-agnostic direction</div><h3>MULTI-DOMAIN<br>ROBOTICS</h3><p>A connective architecture for compatible air, ground and surface platforms and external command systems.</p><ul><li>Third-party UAV, UGV and USV integrations</li><li>Shared operational state through KASSCORE</li><li>Perception context available to command workflows</li><li>Partner-led interoperability evaluation</li></ul><div class="profile-foot">DIRECTION // VALIDATED INTEGRATIONS</div></article>
-</div></div></section>
+<article class="profile civil"><div class="mini">Operational context</div><h3>INFRASTRUCTURE<br>&amp; FIELD OPERATIONS</h3><p>Perception and operator workflows for inspection, awareness and spatial operations.</p><ul><li>Infrastructure and drone inspection</li><li>Mapping and spatial operations</li><li>Logistics and transport awareness</li><li>Security in authorised, controlled environments</li></ul></article>
+<article class="profile integration"><div class="mini">Integration context</div><h3>AUTONOMOUS<br>SYSTEMS &amp; ROBOTICS</h3><p>Platform-agnostic command, edge AI perception and interoperability across compatible systems.</p><ul><li>Third-party UAV, UGV and USV integration</li><li>Robotics perception and sensing</li><li>External command-system connectivity</li><li>Controlled testing and field validation</li></ul></article>
+</div><a class="section-link" href="#proof">VIEW VALIDATION <span aria-hidden="true">→</span></a>
+</div></section>
 
 <section id="proof"><div class="wrap">
-<div class="section-head"><h2>VALIDATION<br>FIRST.</h2><p>IronArc is at the prototype stage. The immediate priority is validating FORGE and TEMPER with representative hardware and operator workflows, then extending connectivity through KASSCORE.</p></div>
-<div class="proof-grid">
-<article class="card"><span class="status building">Current focus</span><div class="index">FORGE // COMMAND</div><h3>Operator workflows</h3><p>Assess mission-state visibility, readiness handling, tablet usability and command workflows in representative conditions.</p></article>
-<article class="card"><span class="status building">Current focus</span><div class="index">TEMPER // PERCEPTION</div><h3>Sensor-to-operator evidence</h3><p>Evaluate camera and telemetry inputs, edge perception and the usefulness of evidence in operator decisions.</p></article>
-<article class="card"><span class="status building">Development direction</span><div class="index">KASSCORE // CONNECTIVITY</div><h3>Shared operational state</h3><p>Define and validate exchanges across the command and perception layers, third-party platforms and external systems.</p></article>
-</div></div></section>
+<div class="section-head"><h2>VALIDATION<br>FIRST.</h2><p>IronArc is being developed through staged software, hardware and representative-environment validation. The current focus is FORGE and TEMPER; wider interoperability follows tested integrations.</p></div>
+<div class="proof-grid four-grid">
+<article class="card"><div class="index">01 // SOFTWARE</div><h3>Software</h3><p>Interface, workflow, perception and integration testing.</p></article>
+<article class="card"><div class="index">02 // HARDWARE</div><h3>Hardware</h3><p>Third-party platform and sensor integration.</p></article>
+<article class="card"><div class="index">03 // FIELD</div><h3>Field</h3><p>Representative operating environments and repeatable validation.</p></article>
+<article class="card"><div class="index">04 // EVIDENCE</div><h3>Evidence</h3><p>Test records, screenshots, system behaviour and documented checkpoints.</p></article>
+</div><a class="section-link" href="#contact">PARTNER WITH US <span aria-hidden="true">→</span></a>
+</div></section>
 
 <section id="europe" class="iai-compact"><div class="wrap">
-<div class="section-head"><h2>EUROPEAN<br>DIRECTION.</h2><p>Spain and the wider European ecosystem are the target direction for technical collaboration, pilot partnerships and field validation. This describes our development plans, not a completed relocation or incorporation.</p></div>
+<div class="eyebrow">EUROPEAN STRATEGY</div>
+<div class="section-head"><h2>EUROPEAN<br>BASE.</h2><p>IronArc Industries is building toward a European operating base for engineering, validation and commercial deployment. We are developing relationships across the European ecosystem while establishing the right long-term base for technical operations, incorporation and growth.</p></div>
 <div class="iai-europe-grid">
-<article class="iai-europe-card spain"><div class="iai-eyebrow">01 // SPAIN</div><h3>Spain</h3><div class="iai-role">Target ecosystem</div><p>Seeking engineering relationships, representative test environments and pilot opportunities to support FORGE and TEMPER validation.</p><div class="iai-tags"><span>Technical support</span><span>Pilot partners</span><span>Field validation</span></div></article>
-<article class="iai-europe-card europe"><div class="iai-eyebrow">02 // WIDER EUROPE</div><h3>Europe</h3><div class="iai-role">Partner development</div><p>Connecting with platform manufacturers, robotics teams, external command-system providers, investors and ecosystem partners.</p><div class="iai-tags"><span>Interoperability</span><span>Integration</span><span>Ecosystem</span></div></article>
+<article class="iai-europe-card"><div class="iai-eyebrow">01 // OPERATING BASE</div><h3>EUROPE</h3><div class="iai-role">Operating &amp; Engineering Base</div><p>Engineering, incorporation, founder operations and long-term company development.</p><div class="iai-tags"><span>ENGINEERING</span><span>OPERATIONS</span><span>GROWTH</span></div></article>
+<article class="iai-europe-card"><div class="iai-eyebrow">02 // PARTNER NETWORK</div><h3>EUROPE-WIDE</h3><div class="iai-role">Validation &amp; Integration</div><p>Building relationships with autonomous-platform manufacturers, robotics teams, infrastructure operators, investors and technical partners across the European ecosystem.</p><div class="iai-tags"><span>VALIDATION</span><span>INTEGRATION</span><span>PARTNERSHIPS</span></div></article>
 </div>
-<div class="iai-baseline"><strong>FORGE + TEMPER FIRST</strong> &nbsp;//&nbsp; REPRESENTATIVE VALIDATION &nbsp;//&nbsp; KASSCORE CONNECTIVITY</div>
-<div class="section-head"><h2>NEXT<br>VALIDATION.</h2><p>Build repeatable evidence before making broader capability claims.</p></div>
-<div class="iai-validation-grid">
-<article class="iai-validation-card"><div class="iai-validation-index">01 // OPERATOR</div><h3>Field usability</h3><p>Tablet interaction, touch ergonomics, readability and mission workflow assessment.</p><span class="iai-state">Validation priority</span></article>
-<article class="iai-validation-card"><div class="iai-validation-index">02 // INTEGRATION</div><h3>Representative hardware</h3><p>Camera, location and telemetry inputs through a compatible third-party unmanned platform.</p><span class="iai-state">Validation priority</span></article>
-<article class="iai-validation-card"><div class="iai-validation-index">03 // FIELD</div><h3>Partner evaluation</h3><p>Controlled trials, degraded-link behaviour and evidence reviewed with external partners.</p><span class="iai-state">Seeking opportunities</span></article>
-</div>
-<div class="iai-partner"><div><div class="iai-eyebrow">TECHNICAL / PILOT / ECOSYSTEM</div><h2>BUILD THE NEXT<br>VALIDATION PHASE.</h2><p>Bring a platform, an operational use case or a representative test environment. Help shape the next integration and evaluation.</p></div><div class="iai-partner-actions"><a class="iai-partner-btn" href="#contact">DISCUSS A PARTNERSHIP</a></div></div>
+<div class="iai-baseline">FORGE + TEMPER VALIDATION // KASSCORE INTEROPERABILITY // EUROPEAN DEPLOYMENT</div>
+<a class="section-link" href="#contact">DISCUSS EUROPEAN PARTNERSHIP <span aria-hidden="true">→</span></a>
 </div></section>
 
-<section id="approach"><div class="wrap">
-<div class="section-head"><h2>SOFTWARE.<br>INTEGRATION.<br>EVIDENCE.</h2><p>Our approach is to develop useful mission software across existing platforms, then evaluate each integration against a clear operational need.</p></div>
-<div class="moat"><article class="signal"><div class="index">OPERATOR VALUE</div><h3>Context that carries forward</h3><p>Link observations, mission state and operator decisions so teams can review what happened and why.</p></article><article class="signal"><div class="index">PARTNER VALUE</div><h3>Build on existing systems</h3><p>Work with platform and command-system partners to define interfaces, test compatibility and assess operational usefulness.</p></article></div>
-<div class="metric-row" aria-label="Evaluation priorities"><div class="metric"><b>Usability</b><span>Clear operator workflows</span></div><div class="metric"><b>Perception</b><span>Useful sensor context</span></div><div class="metric"><b>Continuity</b><span>Consistent mission state</span></div><div class="metric"><b>Integration</b><span>Repeatable compatibility checks</span></div></div>
-</div></section>
+
 
 <section id="team"><div class="wrap">
 <div class="section-head"><h2>FOUNDING<br>TEAM.</h2><p>IronArc Industries was founded by Hicham Kassouri, with Oussama Kassouri serving as Co-Founder and Head of Flight Operations and Validation.</p></div>
 <div class="founder">
-<article class="panel"><div class="index">FOUNDER // CEO</div><h3>Hicham Kassouri</h3><p>Leads company direction, FORGE, TEMPER and KASSCORE product development, systems integration and commercial validation strategy.</p><div class="founder-line">PRODUCT // SYSTEMS // COMPANY DIRECTION</div></article>
+<article class="panel"><div class="index">FOUNDER // CEO</div><h3>Hicham Kassouri</h3><p>Focuses on autonomous systems product development, field operations, UAV and robotics integration, and systems testing.</p><div class="founder-line">PRODUCT // SYSTEMS // COMPANY DIRECTION</div></article>
 <article class="panel"><div class="index">CO-FOUNDER // FLIGHT OPERATIONS &amp; VALIDATION</div><h3>Oussama Kassouri</h3><p>Leads UAV operations, flight testing, operator workflow assessment and controlled field validation.</p><div class="founder-line">UAV OPERATIONS // SAFETY // FIELD VALIDATION</div></article>
 </div></div></section>
 
 <section id="contact"><div class="wrap ask">
-<div class="ask-top"><div><div class="eyebrow">Technical support / pilots / investment</div><h2>HELP VALIDATE<br>WHAT COMES NEXT.</h2></div><p>We welcome technical support, pilot partners and validation opportunities, alongside investors and ecosystem partners aligned with the Spain and Europe direction.</p></div>
-<div class="grid3">
-<article class="card"><div class="index">01 // TECHNICAL</div><h3>Support integration</h3><p>Collaborate on sensors, edge processing, unmanned platforms and command-system interfaces.</p></article>
-<article class="card"><div class="index">02 // PILOT &amp; VALIDATION</div><h3>Bring a use case</h3><p>Help evaluate FORGE and TEMPER through drone inspection, UAS operations or a representative test environment.</p></article>
-<article class="card"><div class="index">03 // INVESTOR &amp; ECOSYSTEM</div><h3>Support the next phase</h3><p>Discuss investment, introductions and development support for the validation and interoperability roadmap.</p></article>
+<div class="ask-top"><div><div class="eyebrow">PARTNER / INVEST</div><h2>BUILD WITH<br>IRONARC.</h2></div><p>We are looking for technical, validation and ecosystem partners across Europe who can help prove, integrate and scale the IronArc architecture.</p></div>
+<div class="grid3 four-grid">
+<article class="card"><div class="index">01 // TECHNICAL PARTNERS</div><h3>Integrate</h3><p>Autonomous-platform manufacturers, robotics teams, system integrators and engineering partners.</p></article>
+<article class="card"><div class="index">02 // VALIDATION PARTNERS</div><h3>Prove</h3><p>Representative environments, infrastructure operators and field-testing opportunities.</p></article>
+<article class="card"><div class="index">03 // ECOSYSTEM SUPPORT</div><h3>Develop</h3><p>European incorporation, technical development, engineering relationships and company growth.</p></article>
+<article class="card"><div class="index">04 // INVESTMENT</div><h3>Support</h3><p>Strategic capital aligned with product validation and long-term company development.</p></article>
 </div>
-<div class="ask-actions"><a class="btn primary" href="mailto:contact@ironarcindustries.uk">EMAIL IRONARC</a><a class="btn" href="https://www.linkedin.com/in/hicham-kaci-kassouri" target="_blank" rel="noopener noreferrer">CONNECT WITH HICHAM</a></div>
+<div class="ask-actions"><a class="btn primary" href="mailto:contact@ironarcindustries.uk?subject=IronArc%20partnership%20%2F%20investment">PARTNER / INVEST</a><a class="btn" href="mailto:contact@ironarcindustries.uk">CONTACT IRONARC</a><a class="section-link" href="https://www.linkedin.com/in/hicham-kaci-kassouri" target="_blank" rel="noopener noreferrer">CONNECT WITH HICHAM</a></div>
 </div></section>
 </main>
 <footer><div class="wrap footer-grid">
