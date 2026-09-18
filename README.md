@@ -8,7 +8,7 @@ CNAME retains the existing GitHub Pages custom domain.
 
 - FORGE: command layer.
 - TEMPER: intelligence / perception layer.
-- KASSCORE: interoperability / shared operational state layer.
+- FABRIC: integration layer.
 - Validate FORGE and TEMPER first. Third-party UAV/UGV/USV and external command-system interoperability is the development direction, not universal compatibility.
 - Europe is the target operating base, with a Europe-wide partner and validation network. No country-specific base or completed incorporation is claimed.
 - Invite technical support, pilot partners, validation opportunities, investors and ecosystem partners.

@@ -453,6 +453,23 @@ h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
 }
 :root{--civil:#76A7D5;--restricted:#C58F99}
 .iai-eyebrow,.iai-tags span,.iai-baseline,.iai-role{font-size:12px}
+/* Validation roadmap only. */
+#proof .proof-grid{grid-auto-rows:1fr}
+#proof .card{padding:18px;min-height:0;display:flex;flex-direction:column;--status:#B39A65;--progress:3fr}
+#proof .roadmap-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+#proof .roadmap-top .index{color:var(--text);font-size:11px;letter-spacing:.08em;white-space:nowrap}
+#proof .roadmap-status{color:var(--status);font-size:9px;font-weight:800;letter-spacing:.025em;white-space:nowrap}
+#proof .card h3{font-size:11px;letter-spacing:.12em;color:var(--muted);margin:12px 0 16px}
+#proof .roadmap-milestones{list-style:none;margin:0 0 20px;padding:0;color:var(--muted);font-size:13px;line-height:1.6}
+#proof .roadmap-milestones li+li{margin-top:4px}
+#proof .roadmap-rail{display:grid;grid-template-columns:var(--progress) 1fr;height:2px;margin-top:auto;background:var(--line)}
+#proof .roadmap-rail::before{content:'';background:var(--status)}
+#proof .roadmap-validated{--status:#819D8B;--progress:1fr 0fr}
+#proof .roadmap-validated .roadmap-rail{grid-template-columns:1fr}
+#proof .roadmap-development{--progress:1fr}
+#proof .roadmap-pending{--status:#AF7B7B;--progress:.12fr}
+@media(min-width:601px) and (max-width:1100px){#proof .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#proof .proof-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -475,13 +492,13 @@ h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
 <section id="thesis"><div class="wrap"><div class="section-head"><h2>SENSE.<br>UNDERSTAND.<br>ACT.</h2><p>IronArc is a European-focused autonomous systems software and integration company. We connect operator workflows, machine-assisted sensing and system data across compatible third-party platforms.</p></div></div></section>
 
 <section id="architecture"><div class="wrap">
-<div class="section-head"><h2>THREE LAYERS.<br>ONE ARCHITECTURE.</h2><p>Command, perception and interoperability for autonomous platforms. FORGE and TEMPER validation comes first, with KASSCORE connecting shared operational state across systems.</p></div>
+<div class="section-head"><h2>THREE LAYERS.<br>ONE ARCHITECTURE.</h2><p>Command, perception and interoperability for autonomous platforms. FORGE and TEMPER validation comes first, with FABRIC connecting shared operational state across systems.</p></div>
 <div class="solution">
 <article class="panel" id="forge"><h3>FORGE</h3><div class="index">COMMAND</div><p>Operator control, spatial awareness, mission workflow, evidence and reporting.</p></article>
 <article class="panel" id="temper"><h3>TEMPER</h3><div class="index">INTELLIGENCE</div><p>Machine-assisted perception, classification, sensing, tracking and confidence-based observations.</p></article>
-<article class="panel" id="kasscore"><h3>KASSCORE</h3><div class="index">INTEROPERABILITY</div><p>Shared operational state, system connectivity, track association and cross-platform data exchange.</p></article>
+<article class="panel" id="fabric"><h3>FABRIC</h3><div class="index">INTEGRATION</div><p>Shared operational state, system connectivity, track association and cross-platform data exchange.</p></article>
 </div>
-<div class="chain architecture-flow"><span>TEMPER OBSERVES</span><span>KASSCORE ASSOCIATES</span><span>FORGE ENABLES OPERATOR ACTION</span></div>
+<div class="chain architecture-flow"><span>TEMPER OBSERVES</span><span>FABRIC ASSOCIATES</span><span>FORGE ENABLES OPERATOR ACTION</span></div>
 <p class="scope-note">Designed for unmanned aerial vehicles (UAV), ground vehicles (UGV), surface vessels (USV), robotics and external command systems. Compatibility is established through prototype integration and controlled testing.</p>
 <a class="section-link" href="#profiles">EXPLORE APPLICATIONS <span aria-hidden="true">→</span></a>
 </div></section>
@@ -495,12 +512,12 @@ h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
 </div></section>
 
 <section id="proof"><div class="wrap">
-<div class="section-head"><h2>VALIDATION<br>FIRST.</h2><p>IronArc is being developed through staged software, hardware and representative-environment validation. The current focus is FORGE and TEMPER; wider interoperability follows tested integrations.</p></div>
+<div class="section-head"><h2>VALIDATION<br>ROADMAP.</h2><p>IronArc advances through staged validation of command, intelligence and integration. Each layer is progressed independently before being proven together across external platforms and operational environments.</p></div>
 <div class="proof-grid four-grid">
-<article class="card"><div class="index">01 // SOFTWARE</div><h3>Software</h3><p>Interface, workflow, perception and integration testing.</p></article>
-<article class="card"><div class="index">02 // HARDWARE</div><h3>Hardware</h3><p>Third-party platform and sensor integration.</p></article>
-<article class="card"><div class="index">03 // FIELD</div><h3>Field</h3><p>Representative operating environments and repeatable validation.</p></article>
-<article class="card"><div class="index">04 // EVIDENCE</div><h3>Evidence</h3><p>Test records, screenshots, system behaviour and documented checkpoints.</p></article>
+<article class="card roadmap-validated"><div class="roadmap-top"><div class="index">01 // FORGE</div><span class="roadmap-status">VALIDATED</span></div><h3>COMMAND</h3><ul class="roadmap-milestones"><li>Operator access</li><li>Unified mission workspace</li><li>Spatial control</li><li>Operator authority</li></ul><div class="roadmap-rail" aria-hidden="true"></div></article>
+<article class="card roadmap-active"><div class="roadmap-top"><div class="index">02 // TEMPER</div><span class="roadmap-status">ACTIVE</span></div><h3>INTELLIGENCE</h3><ul class="roadmap-milestones"><li>Live sensing</li><li>Perception processing</li><li>Transport awareness</li><li>Operator-reviewed outputs</li></ul><div class="roadmap-rail" aria-hidden="true"></div></article>
+<article class="card roadmap-development"><div class="roadmap-top"><div class="index">03 // FABRIC</div><span class="roadmap-status">IN DEVELOPMENT</span></div><h3>INTEGRATION</h3><ul class="roadmap-milestones"><li>Shared operational state</li><li>System interoperability</li><li>Platform connectivity</li></ul><div class="roadmap-rail" aria-hidden="true"></div></article>
+<article class="card roadmap-pending"><div class="roadmap-top"><div class="index">04 // NEXT</div><span class="roadmap-status">PENDING</span></div><h3>VALIDATION</h3><ul class="roadmap-milestones"><li>Third-party UAV integration</li><li>Representative field testing</li><li>Multi-platform expansion</li></ul><div class="roadmap-rail" aria-hidden="true"></div></article>
 </div><a class="section-link" href="#contact">PARTNER WITH US <span aria-hidden="true">→</span></a>
 </div></section>
 
@@ -511,7 +528,7 @@ h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
 <article class="iai-europe-card"><div class="iai-eyebrow">01 // OPERATING BASE</div><h3>EUROPE</h3><div class="iai-role">Operating &amp; Engineering Base</div><p>Engineering, incorporation, founder operations and long-term company development.</p><div class="iai-tags"><span>ENGINEERING</span><span>OPERATIONS</span><span>GROWTH</span></div></article>
 <article class="iai-europe-card"><div class="iai-eyebrow">02 // PARTNER NETWORK</div><h3>EUROPE-WIDE</h3><div class="iai-role">Validation &amp; Integration</div><p>Building relationships with autonomous-platform manufacturers, robotics teams, infrastructure operators, investors and technical partners across the European ecosystem.</p><div class="iai-tags"><span>VALIDATION</span><span>INTEGRATION</span><span>PARTNERSHIPS</span></div></article>
 </div>
-<div class="iai-baseline">FORGE + TEMPER VALIDATION // KASSCORE INTEROPERABILITY // EUROPEAN DEPLOYMENT</div>
+<div class="iai-baseline">FORGE + TEMPER VALIDATION // FABRIC INTEROPERABILITY // EUROPEAN DEPLOYMENT</div>
 <a class="section-link" href="#contact">DISCUSS EUROPEAN PARTNERSHIP <span aria-hidden="true">→</span></a>
 </div></section>
 
@@ -537,7 +554,7 @@ h1{font-size:clamp(28px,5.8vw,78px);line-height:1;letter-spacing:-.045em}
 </main>
 <footer><div class="wrap footer-grid">
 <a class="wordmark" href="#top"><span class="wm-main">IRONARC</span><span class="wm-sub">INDUSTRIES</span></a>
-<div class="footer-note">Prototype-stage development. FORGE / TEMPER validation first; KASSCORE is the interoperability and shared operational state layer. <a href="#architecture">Explore the architecture</a>.</div>
+<div class="footer-note">Prototype-stage development. FORGE / TEMPER validation first; FABRIC is the interoperability and shared operational state layer. <a href="#architecture">Explore the architecture</a>.</div>
 </div></footer>
 <script src="./ironarc-consent.js" defer></script>
 </body></html>
