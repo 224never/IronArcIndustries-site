@@ -62,7 +62,7 @@ h3 { font-size: 1.25rem; line-height: 1.2; }
 .panel .role { color: var(--accent); font-weight: 700; }
 .layers h3 { color: var(--accent); letter-spacing: .14em; }
 .note { margin-top: 14px; border-left: 3px solid var(--accent); padding: 4px 0 4px 13px; color: var(--text); }
-.civil { background: #0d1319; }
+.civil, .ethics { background: #0d1319; }
 .algeria { background: #152431; border-color: #4c647a; }
 .carrier-direction { border-left: 3px solid var(--accent); }
 .gates { list-style: none; grid-template-columns: repeat(4,minmax(0,1fr)); margin: 0 0 12px; padding: 0; }

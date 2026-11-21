@@ -13,7 +13,7 @@
     "imageAlt": "IronArc Industries wordmark with FORGE, TEMPER and FABRIC",
     "skip": "Skip to content",
     "navLabel": "Main navigation",
-    "nav": ["Architecture", "Products", "CIVIL", "Validation", "Founders"],
+    "nav": ["Architecture", "Ethics", "Products", "CIVIL", "Validation", "Founders"],
     "contactNav": "Contact",
     "eyebrow": "Pre-incorporation R&D venture",
     "heroTitle": "Mission systems under human control",
@@ -28,6 +28,13 @@
       ["FORGE", "Operator workspace", "The operator workspace supports mission review, mapping, evidence and reporting."]
     ],
     "humanAuthority": "IronArc carriers are human-controlled and human-operated. INAV supports pilot-controlled navigation and safety assistance.",
+    "ethicsTitle": "Why human control matters",
+    "ethicsBody": "Field conditions change, sensor readings can be ambiguous, and decisions can affect responders and the public. A human operator can weigh the context, judge whether there is enough evidence to act and take responsibility for the decision.",
+    "ethics": [
+      ["Authority to act", "A designated operator initiates and approves every vehicle command and mission action. Operators must be able to decline a recommendation, intervene or call off a mission."],
+      ["Information to judge", "TEMPER provides advisory observations. We design FORGE to show where observations came from and to make uncertainty and missing or stale information visible before a decision."],
+      ["Accountability after the decision", "We design FORGE and FABRIC to record what the operator reviewed, who authorised the action and what was recorded afterwards, so decisions can be reviewed and lessons applied."]
+    ],
     "civilTitle": "Designed for civil fieldwork",
     "civilBody": "CIVIL is IronArc’s near-term development focus. We are preparing these workflows for supervised evaluation with relevant operators and authorities.",
     "applications": [
@@ -83,7 +90,7 @@
     "imageAlt": "Logo IronArc Industries accompagné des noms FORGE, TEMPER et FABRIC",
     "skip": "Aller au contenu",
     "navLabel": "Navigation principale",
-    "nav": ["Architecture", "Produits", "CIVIL", "Validation", "Fondateurs"],
+    "nav": ["Architecture", "Éthique", "Produits", "CIVIL", "Validation", "Fondateurs"],
     "contactNav": "Contact",
     "eyebrow": "Projet de R&D en phase de préconstitution",
     "heroTitle": "Des systèmes de mission sous contrôle humain",
@@ -98,6 +105,13 @@
       ["FORGE", "Espace de travail de l’opérateur", "L’interface opérateur permet de suivre la mission, de consulter la carte et les éléments de preuve, et de préparer les rapports."]
     ],
     "humanAuthority": "Les plateformes IronArc sont pilotées et exploitées par des opérateurs humains, qui en gardent le contrôle. INAV apporte une aide à la navigation et à la sécurité du pilotage.",
+    "ethicsTitle": "Pourquoi le contrôle humain est essentiel",
+    "ethicsBody": "Les conditions de terrain changent, les données des capteurs peuvent être ambiguës et les décisions peuvent avoir des conséquences pour les intervenants et la population. L’opérateur peut apprécier le contexte, déterminer si les informations justifient une action et assumer la responsabilité de sa décision.",
+    "ethics": [
+      ["Autorité sur les actions", "Un opérateur désigné initie et approuve chaque commande de véhicule et chaque action de mission. Il doit pouvoir écarter une recommandation, intervenir ou interrompre la mission."],
+      ["Informations pour décider", "TEMPER fournit des observations à titre consultatif. FORGE est conçu pour indiquer la provenance des observations et signaler les incertitudes, les données manquantes ou les informations qui ne sont plus à jour avant la prise de décision."],
+      ["Responsabilité et traçabilité", "Nous concevons FORGE et FABRIC pour consigner les informations consultées, l’identité de la personne qui a autorisé l’action et les faits enregistrés ensuite, afin de permettre un retour d’expérience."]
+    ],
     "civilTitle": "Des usages pour les missions civiles de terrain",
     "civilBody": "Le profil CIVIL est la priorité de développement à court terme d’IronArc. Nous préparons ces usages pour une évaluation encadrée avec les opérateurs et autorités concernés.",
     "applications": [

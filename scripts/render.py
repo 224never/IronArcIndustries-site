@@ -12,6 +12,13 @@ ORIGIN = "https://ironarcindustries.uk"
 SOURCE = ROOT / "site-source"
 
 
+def cards(entries):
+    return "".join(
+        f'<article class="panel"><h3>{escape(name)}</h3><p>{escape(body)}</p></article>'
+        for name, body in entries
+    )
+
+
 def render(content):
     values = {key: escape(value) for key, value in content.items() if isinstance(value, str)}
     canonical = ORIGIN + content["path"]
@@ -37,7 +44,7 @@ def render(content):
         subject=quote(content["subject"], safe=""),
         navLinks="".join(
             f'<a href="#{anchor}">{escape(label)}</a>'
-            for anchor, label in zip(("architecture", "products", "profiles", "proof", "team"), content["nav"], strict=True)
+            for anchor, label in zip(("architecture", "ethics", "products", "profiles", "proof", "team"), content["nav"], strict=True)
         ),
         flow="".join(
             f'<li><strong>{escape(name)}</strong><span>{escape(label)}</span></li>'
@@ -47,14 +54,9 @@ def render(content):
             f'<article class="panel"><h3>{escape(name)}</h3><p class="role">{escape(label)}</p><p>{escape(body)}</p></article>'
             for name, label, body in content["layers"]
         ),
-        applications="".join(
-            f'<article class="panel"><h3>{escape(name)}</h3><p>{escape(body)}</p></article>'
-            for name, body in content["applications"]
-        ),
-        offerCards="".join(
-            f'<article class="panel"><h3>{escape(name)}</h3><p>{escape(body)}</p></article>'
-            for name, body in content["offers"]
-        ),
+        applications=cards(content["applications"]),
+        ethicsCards=cards(content["ethics"]),
+        offerCards=cards(content["offers"]),
         gates="".join(
             f'<li><span class="gate-status">{escape(status)}</span><h3>{escape(level)}</h3><p>{escape(body)}</p></li>'
             for level, status, body in content["gates"]
