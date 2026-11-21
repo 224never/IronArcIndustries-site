@@ -1,0 +1,156 @@
+{
+  "en": {
+    "lang": "en-GB",
+    "locale": "en_GB",
+    "alternateLocale": "fr_FR",
+    "path": "/",
+    "alternatePath": "/fr/",
+    "alternateLang": "fr",
+    "alternateLabel": "Lire le site en français",
+    "language": "Français",
+    "title": "IronArc Industries | Human-operated mission systems",
+    "description": "IronArc Industries is a pre-incorporation R&D venture building software, sensing nodes and integrated carriers around one architecture for human-operated missions.",
+    "imageAlt": "IronArc Industries wordmark with FORGE, TEMPER and FABRIC",
+    "skip": "Skip to content",
+    "navLabel": "Main navigation",
+    "nav": ["Architecture", "Ethics", "Products", "CIVIL", "Validation", "Founders"],
+    "contactNav": "Contact",
+    "eyebrow": "Pre-incorporation R&D venture",
+    "heroTitle": "Mission systems under human control",
+    "heroBody": "IronArc is building a family of human-operated mission systems around one architecture. Our goal is to bring sensor observations, mission records and operator decisions into one workflow, starting with civil fieldwork.",
+    "heroArchitecture": "Explore the architecture",
+    "heroContact": "Discuss an evaluation",
+    "architectureTitle": "One architecture, three layers",
+    "architectureBody": "TEMPER produces advisory observations. FABRIC maintains the canonical mission record and preserves provenance. In FORGE, operators review information and approve every vehicle command and mission action.",
+    "layers": [
+      ["TEMPER", "Sensing & perception", "The sensing node turns sensor inputs into observations for human review. AI remains advisory."],
+      ["FABRIC", "Integration & mission state", "The integration layer preserves the authoritative mission record, where observations came from and how the record can be replayed."],
+      ["FORGE", "Operator workspace", "The operator workspace supports mission review, mapping, evidence and reporting."]
+    ],
+    "humanAuthority": "IronArc carriers are human-controlled and human-operated. INAV supports pilot-controlled navigation and safety assistance.",
+    "ethicsTitle": "Why human control matters",
+    "ethicsBody": "Field conditions change, sensor readings can be ambiguous, and decisions can affect responders and the public. A human operator can weigh the context, judge whether there is enough evidence to act and take responsibility for the decision.",
+    "ethics": [
+      ["Authority to act", "A designated operator initiates and approves every vehicle command and mission action. Operators must be able to decline a recommendation, intervene or call off a mission."],
+      ["Information to judge", "TEMPER provides advisory observations. We design FORGE to show where observations came from and to make uncertainty and missing or stale information visible before a decision."],
+      ["Accountability after the decision", "We design FORGE and FABRIC to record what the operator reviewed, who authorised the action and what was recorded afterwards, so decisions can be reviewed and lessons applied."]
+    ],
+    "civilTitle": "Designed for civil fieldwork",
+    "civilBody": "CIVIL is IronArc’s near-term development focus. We are preparing these workflows for supervised evaluation with relevant operators and authorities.",
+    "applications": [
+      ["Wildfire situational awareness", "Help responders review possible hotspots, incident context and access information for mapping and reporting."],
+      ["Search and rescue support", "Provide operator-reviewed observations and timestamped evidence to support the response led by the competent authorities."],
+      ["Infrastructure inspection", "Bring observations, site context and evidence into a review workflow for infrastructure and industrial teams."]
+    ],
+    "algeriaTitle": "Algeria · CIVIL R&D exploration",
+    "algeriaBody": "In Algeria, we are exploring wildfire awareness and search and rescue as R&D use cases. Any supervised evaluation would depend on readiness, an agreed scope and authorisation from the competent authorities.",
+    "offerTitle": "Three offerings built on the same architecture",
+    "offerBody": "We are developing three ways to use the IronArc architecture, from the operator’s workspace to a complete sensing and carrier system.",
+    "offers": [
+      ["IronArc software", "Give operators one place to review mission context, maps, observations and evidence, with a shared record for reporting and replay."],
+      ["TEMPER sensing nodes", "Package sensing and advisory perception in IronArc hardware that provides observations for operator review."],
+      ["Integrated IronArc carrier systems", "Bring an IronArc carrier, TEMPER sensing and mission software together for human-operated fieldwork."]
+    ],
+    "carrierTitle": "Carrier family in development",
+    "carrierBody": "The first integrated evaluation is planned around a human-piloted aerial carrier. Ground and surface-vessel carriers are longer-term concepts for the same architecture.",
+    "validationTitle": "From bench evidence to field evaluation",
+    "validationBody": "Integrated V1 is provisionally assessed by IronArc at approximately TRL 4. A working software prototype and specific bench results support that internal assessment. Full TEMPER V1 acceptance remains open.",
+    "validationLabel": "Validation roadmap",
+    "gates": [
+      ["TRL 4", "Current estimate", "Software prototype and specific bench results"],
+      ["TRL 5", "Target", "Complete TEMPER V1 and document representative-environment prototype validation"],
+      ["TRL 6", "Target", "Run integrated UAV trials under realistic field conditions"],
+      ["TRL 7", "Target", "Complete an independent operational pilot"]
+    ],
+    "temperTitle": "TEMPER V1 prototype",
+    "temperBody": "The V1 target scope includes visible-light imaging, thermal imaging, laser ranging and radar. Bench evidence covers selected paths. Complete sensor integration and performance remain acceptance work.",
+    "foundersTitle": "Founders",
+    "foundersBody": "Hicham and Oussama Kassouri lead the pre-incorporation venture. Spain is the intended EU operating and incorporation base.",
+    "founders": [
+      ["Hicham Kassouri", "Founder & CEO", "Leads product, systems and strategy."],
+      ["Oussama Kassouri", "Co-founder · Flight Operations & Validation", "Leads flight operations and prepares controlled testing and validation."]
+    ],
+    "contactTitle": "Work with IronArc",
+    "contactBody": "We welcome discussions with civil authorities and infrastructure operators who can help define evaluation criteria, technical partners with representative test environments, and investors interested in supporting the next validation stage.",
+    "contactButton": "Email IronArc",
+    "subject": "IronArc Industries enquiry",
+    "footerNote": "Pre-incorporation R&D venture · CIVIL development"
+  },
+  "fr": {
+    "lang": "fr",
+    "locale": "fr_FR",
+    "alternateLocale": "en_GB",
+    "path": "/fr/",
+    "alternatePath": "/",
+    "alternateLang": "en-GB",
+    "alternateLabel": "Read the site in English",
+    "language": "English",
+    "title": "IronArc Industries | Systèmes de mission sous contrôle humain",
+    "description": "IronArc Industries est un projet de R&D en phase de préconstitution qui développe des logiciels, des modules de détection et des plateformes intégrées autour d’une architecture commune pour les missions sous contrôle humain.",
+    "imageAlt": "Logo IronArc Industries accompagné des noms FORGE, TEMPER et FABRIC",
+    "skip": "Aller au contenu",
+    "navLabel": "Navigation principale",
+    "nav": ["Architecture", "Éthique", "Produits", "CIVIL", "Validation", "Fondateurs"],
+    "contactNav": "Contact",
+    "eyebrow": "Projet de R&D en phase de préconstitution",
+    "heroTitle": "Des systèmes de mission sous contrôle humain",
+    "heroBody": "IronArc développe une famille de systèmes de mission sous contrôle humain autour d’une architecture commune. Notre objectif est de réunir les observations des capteurs, les données de mission et les décisions des opérateurs dans un même environnement de travail, en commençant par les missions civiles de terrain.",
+    "heroArchitecture": "Découvrir l’architecture",
+    "heroContact": "Échanger sur une évaluation",
+    "architectureTitle": "Une architecture en trois couches",
+    "architectureBody": "TEMPER fournit des observations à titre consultatif. FABRIC conserve le registre de référence de la mission ainsi que la provenance des données. Dans FORGE, les opérateurs examinent les informations et approuvent chaque commande de véhicule et chaque action de mission.",
+    "layers": [
+      ["TEMPER", "Détection et perception", "Le module transforme les données des capteurs en observations que l’opérateur peut examiner. L’IA conserve un rôle consultatif."],
+      ["FABRIC", "Intégration et état de mission", "La couche d’intégration conserve le registre de référence de la mission et l’origine des observations, et permet de rejouer les événements enregistrés."],
+      ["FORGE", "Espace de travail de l’opérateur", "L’interface opérateur permet de suivre la mission, de consulter la carte et les éléments de preuve, et de préparer les rapports."]
+    ],
+    "humanAuthority": "Les plateformes IronArc sont pilotées et exploitées par des opérateurs humains, qui en gardent le contrôle. INAV apporte une aide à la navigation et à la sécurité du pilotage.",
+    "ethicsTitle": "Pourquoi le contrôle humain est essentiel",
+    "ethicsBody": "Les conditions de terrain changent, les données des capteurs peuvent être ambiguës et les décisions peuvent avoir des conséquences pour les intervenants et la population. L’opérateur peut apprécier le contexte, déterminer si les informations justifient une action et assumer la responsabilité de sa décision.",
+    "ethics": [
+      ["Autorité sur les actions", "Un opérateur désigné initie et approuve chaque commande de véhicule et chaque action de mission. Il doit pouvoir écarter une recommandation, intervenir ou interrompre la mission."],
+      ["Informations pour décider", "TEMPER fournit des observations à titre consultatif. FORGE est conçu pour indiquer la provenance des observations et signaler les incertitudes, les données manquantes ou les informations qui ne sont plus à jour avant la prise de décision."],
+      ["Responsabilité et traçabilité", "Nous concevons FORGE et FABRIC pour consigner les informations consultées, l’identité de la personne qui a autorisé l’action et les faits enregistrés ensuite, afin de permettre un retour d’expérience."]
+    ],
+    "civilTitle": "Des usages pour les missions civiles de terrain",
+    "civilBody": "Le profil CIVIL est la priorité de développement à court terme d’IronArc. Nous préparons ces usages pour une évaluation encadrée avec les opérateurs et autorités concernés.",
+    "applications": [
+      ["Suivi de la situation lors de feux de forêt", "Aider les intervenants à examiner les points chauds potentiels, le contexte du sinistre et les accès pour la cartographie et les rapports."],
+      ["Appui à la recherche et au sauvetage", "Fournir des observations examinées par l’opérateur et des éléments de preuve horodatés pour appuyer l’intervention dirigée par les autorités compétentes."],
+      ["Inspection d’infrastructures", "Rassembler les observations, le contexte du site et les éléments de preuve pour faciliter leur examen par les équipes industrielles et les gestionnaires d’infrastructures."]
+    ],
+    "algeriaTitle": "Algérie · Exploration de cas d’usage CIVIL",
+    "algeriaBody": "En Algérie, nous étudions le suivi des feux de forêt ainsi que la recherche et le sauvetage comme cas d’usage de R&D. Toute évaluation encadrée dépendrait de l’état de préparation du système, d’un périmètre convenu et de l’autorisation des autorités compétentes.",
+    "offerTitle": "Trois offres fondées sur une architecture commune",
+    "offerBody": "Nous développons trois façons d’utiliser l’architecture IronArc, de l’interface opérateur au système complet associant capteurs et plateforme.",
+    "offers": [
+      ["Logiciels IronArc", "Réunir le contexte de mission, les cartes, les observations et les éléments de preuve dans un même espace, avec un registre partagé pour les rapports et la relecture des événements."],
+      ["Modules de détection TEMPER", "Intégrer les capteurs et l’aide à la perception dans un module IronArc qui fournit des observations à examiner par l’opérateur."],
+      ["Plateformes intégrées IronArc", "Associer une plateforme IronArc, les capteurs TEMPER et les logiciels de mission pour des opérations de terrain conduites par des opérateurs humains."]
+    ],
+    "carrierTitle": "Une famille de plateformes en développement",
+    "carrierBody": "La première évaluation du système intégré est prévue sur une plateforme aérienne pilotée par un opérateur. À plus long terme, des plateformes terrestres et des navires de surface sont à l’étude pour cette même architecture.",
+    "validationTitle": "Du banc d’essai à l’évaluation sur le terrain",
+    "validationBody": "IronArc estime provisoirement la maturité de la V1 intégrée à environ TRL 4. Cette estimation interne repose sur un prototype logiciel fonctionnel et des résultats d’essais sur banc à périmètre limité. La validation complète de TEMPER V1 reste à réaliser.",
+    "validationLabel": "Étapes de validation",
+    "gates": [
+      ["TRL 4", "Estimation actuelle", "Prototype logiciel et résultats ciblés d’essais sur banc"],
+      ["TRL 5", "Objectif", "Achever TEMPER V1 et documenter la validation du prototype dans un environnement représentatif"],
+      ["TRL 6", "Objectif", "Mener des essais intégrés sur drone dans des conditions réalistes de terrain"],
+      ["TRL 7", "Objectif", "Mener un pilote opérationnel indépendant"]
+    ],
+    "temperTitle": "Prototype TEMPER V1",
+    "temperBody": "Le périmètre visé pour la V1 comprend l’imagerie en lumière visible, l’imagerie thermique, la télémétrie laser et le radar. Les essais sur banc couvrent certaines chaînes de traitement. L’intégration complète des capteurs et la mesure des performances restent à valider.",
+    "foundersTitle": "Fondateurs",
+    "foundersBody": "Hicham et Oussama Kassouri dirigent le projet en phase de préconstitution. L’Espagne est le pays envisagé pour établir la structure juridique et la base opérationnelle dans l’Union européenne.",
+    "founders": [
+      ["Hicham Kassouri", "Fondateur et directeur général", "Dirige le développement des produits, l’architecture des systèmes et la stratégie."],
+      ["Oussama Kassouri", "Cofondateur · Opérations de vol et validation", "Dirige les opérations de vol et prépare les essais encadrés et la validation."]
+    ],
+    "contactTitle": "Travailler avec IronArc",
+    "contactBody": "Nous souhaitons échanger avec les autorités civiles et les gestionnaires d’infrastructures qui peuvent contribuer à définir les critères d’évaluation, les partenaires techniques disposant d’environnements d’essai représentatifs et les investisseurs intéressés par la prochaine étape de validation.",
+    "contactButton": "Écrire à IronArc",
+    "subject": "Demande d’informations — IronArc Industries",
+    "footerNote": "Projet de R&D en phase de préconstitution · Développement CIVIL"
+  }
+}

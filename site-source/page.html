@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title</title>
+  <meta name="description" content="$description">
+  <meta name="theme-color" content="#090c0f">
+  <link rel="canonical" href="$canonical">
+  <link rel="alternate" hreflang="en-GB" href="https://ironarcindustries.uk/">
+  <link rel="alternate" hreflang="fr" href="https://ironarcindustries.uk/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://ironarcindustries.uk/">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/ironarc.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IronArc Industries">
+  <meta property="og:locale" content="$locale">
+  <meta property="og:locale:alternate" content="$alternateLocale">
+  <meta property="og:url" content="$canonical">
+  <meta property="og:title" content="$title">
+  <meta property="og:description" content="$description">
+  <meta property="og:image" content="https://ironarcindustries.uk/ironarc-social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="$imageAlt">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$title">
+  <meta name="twitter:description" content="$description">
+  <meta name="twitter:image" content="https://ironarcindustries.uk/ironarc-social-preview.png">
+  <meta name="twitter:image:alt" content="$imageAlt">
+  <script type="application/ld+json">$jsonld</script>
+  <script src="/ironarc-consent.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#top">$skip</a>
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="wordmark" href="#top" aria-label="IronArc Industries"><span>IRONARC</span><small>INDUSTRIES</small></a>
+      <nav class="nav" aria-label="$navLabel">$navLinks</nav>
+      <div class="top-actions">
+        <a class="contact-nav" href="#contact">$contactNav</a>
+        <a class="language" href="$alternatePath" lang="$alternateLang" hreflang="$alternateLang" aria-label="$alternateLabel">$language</a>
+      </div>
+    </div>
+  </header>
+  <main id="top" tabindex="-1">
+    <section id="thesis" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">$eyebrow</p>
+          <h1 id="hero-title">$heroTitle</h1>
+          <p class="lede">$heroBody</p>
+          <div class="actions">
+            <a class="button primary" href="#architecture">$heroArchitecture</a>
+            <a class="button" href="#contact" data-analytics-event="partner_invest_click">$heroContact</a>
+          </div>
+        </div>
+        <ol class="architecture-flow" aria-label="$architectureTitle">$flow</ol>
+      </div>
+    </section>
+    <section id="architecture" class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>$architectureTitle</h2><p>$architectureBody</p></div>
+        <div class="cards layers">$layerCards</div>
+        <p class="note">$humanAuthority</p>
+      </div>
+    </section>
+    <section id="ethics" class="section ethics">
+      <div class="wrap">
+        <div class="section-head"><h2>$ethicsTitle</h2><p>$ethicsBody</p></div>
+        <div class="cards">$ethicsCards</div>
+      </div>
+    </section>
+    <section id="products" class="section products">
+      <div class="wrap">
+        <div class="section-head"><h2>$offerTitle</h2><p>$offerBody</p></div>
+        <div class="cards">$offerCards</div>
+        <article class="panel carrier-direction"><h3>$carrierTitle</h3><p>$carrierBody</p></article>
+      </div>
+    </section>
+    <section id="profiles" class="section civil">
+      <div class="wrap">
+        <div class="section-head"><h2>$civilTitle</h2><p>$civilBody</p></div>
+        <div class="cards application-cards">$applications</div>
+        <article class="panel algeria"><h3>$algeriaTitle</h3><p>$algeriaBody</p></article>
+      </div>
+    </section>
+    <section id="proof" class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>$validationTitle</h2><p>$validationBody</p></div>
+        <ol class="gates" aria-label="$validationLabel">$gates</ol>
+        <article class="panel temper"><h3>$temperTitle</h3><p>$temperBody</p></article>
+      </div>
+    </section>
+    <section id="team" class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>$foundersTitle</h2><p id="europe">$foundersBody</p></div>
+        <div class="split">$founderCards</div>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div><h2>$contactTitle</h2><p>$contactBody</p></div>
+        <a class="button primary" href="mailto:contact@ironarcindustries.uk?subject=$subject" data-analytics-event="contact_click">$contactButton</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer">
+    <a class="wordmark" href="#top" aria-label="IronArc Industries"><span>IRONARC</span><small>INDUSTRIES</small></a>
+    <p>$footerNote</p>
+    <div class="footer-utility" id="footer-utility"><a href="$alternatePath" lang="$alternateLang" hreflang="$alternateLang" aria-label="$alternateLabel">$language</a></div>
+  </div></footer>
+</body>
+</html>

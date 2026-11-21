@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ironarcindustries.uk/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ironarcindustries.uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://ironarcindustries.uk/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ironarcindustries.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ironarcindustries.uk/"/>
+  </url>
+  <url>
+    <loc>https://ironarcindustries.uk/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://ironarcindustries.uk/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ironarcindustries.uk/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ironarcindustries.uk/"/>
+  </url>
 </urlset>
