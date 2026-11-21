@@ -37,7 +37,7 @@ def render(content):
         subject=quote(content["subject"], safe=""),
         navLinks="".join(
             f'<a href="#{anchor}">{escape(label)}</a>'
-            for anchor, label in zip(("architecture", "profiles", "proof", "team"), content["nav"], strict=True)
+            for anchor, label in zip(("architecture", "products", "profiles", "proof", "team"), content["nav"], strict=True)
         ),
         flow="".join(
             f'<li><strong>{escape(name)}</strong><span>{escape(label)}</span></li>'
@@ -51,7 +51,10 @@ def render(content):
             f'<article class="panel"><h3>{escape(name)}</h3><p>{escape(body)}</p></article>'
             for name, body in content["applications"]
         ),
-        offerList="".join(f"<li>{escape(item)}</li>" for item in content["offers"]),
+        offerCards="".join(
+            f'<article class="panel"><h3>{escape(name)}</h3><p>{escape(body)}</p></article>'
+            for name, body in content["offers"]
+        ),
         gates="".join(
             f'<li><span class="gate-status">{escape(status)}</span><h3>{escape(level)}</h3><p>{escape(body)}</p></li>'
             for level, status, body in content["gates"]

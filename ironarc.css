@@ -56,7 +56,7 @@ h3 { font-size: 1.25rem; line-height: 1.2; }
 .cards, .split, .gates { display: grid; gap: 12px; }
 .cards { grid-template-columns: repeat(3,minmax(0,1fr)); }
 .split { grid-template-columns: repeat(2,minmax(0,1fr)); }
-.cards + .split { margin-top: 12px; }
+.cards + .panel { margin-top: 12px; }
 .panel, .gates li { background: var(--surface); border: 1px solid var(--line); padding: 19px 20px; }
 .panel p, .gates p { margin-top: 8px; }
 .panel .role { color: var(--accent); font-weight: 700; }
@@ -64,7 +64,7 @@ h3 { font-size: 1.25rem; line-height: 1.2; }
 .note { margin-top: 14px; border-left: 3px solid var(--accent); padding: 4px 0 4px 13px; color: var(--text); }
 .civil { background: #0d1319; }
 .algeria { background: #152431; border-color: #4c647a; }
-.offerings ul { color: var(--muted); padding-left: 19px; margin: 8px 0 0; }
+.carrier-direction { border-left: 3px solid var(--accent); }
 .gates { list-style: none; grid-template-columns: repeat(4,minmax(0,1fr)); margin: 0 0 12px; padding: 0; }
 .gates li:first-child { border-color: #7595b2; }
 .gate-status { display: block; color: var(--accent); font-size: .87rem; margin-bottom: 8px; }
