@@ -16,6 +16,21 @@
     ad_personalization: "denied"
   };
 
+  const french = document.documentElement.lang === "fr";
+  const copy = french ? {
+    label: "Mesure d’audience facultative",
+    message: "IronArc utilise une mesure d’audience limitée pour comprendre et améliorer les performances du site. Cette mesure est facultative.",
+    accept: "Accepter la mesure d’audience",
+    decline: "Refuser",
+    preferences: "Préférences de mesure d’audience"
+  } : {
+    label: "Optional analytics",
+    message: "IronArc uses limited analytics to understand website performance and improve the site. Analytics is optional.",
+    accept: "Accept analytics",
+    decline: "Decline",
+    preferences: "Analytics preferences"
+  };
+
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () {
     window.dataLayer.push(arguments);
@@ -129,10 +144,8 @@
       }
 
       #ia-analytics-preferences {
-        min-height: auto;
-        padding: 8px 10px;
-        margin-top: 12px;
-        font-size: 10px;
+        padding: 6px 10px;
+        font-size: 13px;
       }
 
       @media (max-width: 520px) {
@@ -158,37 +171,28 @@
     const banner = document.createElement("aside");
     banner.id = "ia-consent";
     banner.hidden = true;
-    banner.setAttribute("aria-label", "Optional analytics");
+    banner.setAttribute("aria-label", copy.label);
 
-    banner.innerHTML = `
-      <p>
-        IRONARC uses limited analytics to understand website performance
-        and improve the site. Analytics is optional.
-      </p>
-      <div class="ia-actions">
-        <button id="ia-accept" type="button">ACCEPT ANALYTICS</button>
-        <button id="ia-decline" type="button">DECLINE</button>
-      </div>
-    `;
-
+    const message = document.createElement("p");
+    message.textContent = copy.message;
+    const actions = document.createElement("div");
+    actions.className = "ia-actions";
+    for (const [id, label] of [["ia-accept", copy.accept], ["ia-decline", copy.decline]]) {
+      const button = document.createElement("button");
+      button.id = id;
+      button.type = "button";
+      button.textContent = label;
+      actions.appendChild(button);
+    }
+    banner.append(message, actions);
     document.body.appendChild(banner);
 
     const preferences = document.createElement("button");
     preferences.id = "ia-analytics-preferences";
     preferences.type = "button";
-    preferences.textContent = "ANALYTICS PREFERENCES";
-
-    const footer = document.querySelector("footer");
-
-    if (footer) {
-      footer.appendChild(preferences);
-    } else {
-      preferences.style.position = "fixed";
-      preferences.style.right = "16px";
-      preferences.style.bottom = "16px";
-      preferences.style.zIndex = "9998";
-      document.body.appendChild(preferences);
-    }
+    preferences.textContent = copy.preferences;
+    const footer = document.getElementById("footer-utility") || document.querySelector("footer") || document.body;
+    footer.appendChild(preferences);
 
     return { banner, preferences };
   }
@@ -238,14 +242,6 @@
       banner.hidden = false;
     });
 
-    const labels = new Map([
-      ["PARTNER / INVEST", "partner_invest_click"],
-      ["PARTNER WITH US", "partner_invest_click"],
-      ["DISCUSS EUROPEAN PARTNERSHIP", "partner_invest_click"],
-      ["CONTACT", "contact_click"],
-      ["CONTACT IRONARC", "contact_click"]
-    ]);
-
     document.addEventListener("click", event => {
       if (
         !accepted ||
@@ -257,19 +253,8 @@
 
       const link = event.target.closest("a");
       if (!link) return;
-const href = link.getAttribute("href") || "";
-
-const label = link.textContent
-  .replace(/→/g, "")
-  .replace(/\s+/g, " ")
-  .trim()
-  .toUpperCase();
-
-      let eventName = labels.get(label);
-
-      if (href === "#contact") {
-         eventName = "contact_click";
-      }
+      const href = link.getAttribute("href");
+      const eventName = link.dataset.analyticsEvent || (href === "#contact" ? "contact_click" : undefined);
 
       if (!eventName) return;
 
